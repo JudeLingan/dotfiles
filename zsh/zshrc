@@ -15,6 +15,11 @@ unsetopt autocd beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+# Aliases
+alias fd="cd \$(find * -type d | fzf)"
+alias ls="ls --color=auto"
+alias grep="grep --color=auto"
+
 # Powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
