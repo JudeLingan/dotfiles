@@ -1,9 +1,9 @@
 {
 	"name": "Default",
 	"groups": {
-		"information:additional":     { "fg": "blue", "bg": "sysblack", "attrs": [] },
-		"information:regular":        { "fg": "blue", "bg": "sysblack", "attrs": ["bold"] },
-		"information:highlighted":    { "fg": "red", "bg": "sysblack", "attrs": [] },
+		"information:additional":     { "fg": "white", "bg": "grey", "attrs": [] },
+		"information:regular":        { "fg": "white", "bg": "grey", "attrs": ["bold"] },
+		"information:highlighted":    { "fg": "red", "bg": "grey", "attrs": [] },
 		"information:priority":       { "fg": "brightyellow", "bg": "mediumorange", "attrs": [] },
 		"warning:regular":            { "fg": "white", "bg": "brightred", "attrs": ["bold"] },
 		"critical:failure":           { "fg": "white", "bg": "darkestred", "attrs": [] },
