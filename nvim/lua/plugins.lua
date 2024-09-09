@@ -25,6 +25,9 @@ require("lazy").setup({
     "mhartington/formatter.nvim",
     "mfussenegger/nvim-lint",
 
+    -- jdtls
+    'mfussenegger/nvim-jdtls',
+
     -- CODE COMPLETION
     -- Vscode-like pictograms
 	{
