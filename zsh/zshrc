@@ -25,6 +25,3 @@ alias grep="grep --color=auto"
 # Powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
-
-# Syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
