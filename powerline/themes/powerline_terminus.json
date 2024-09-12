@@ -1,12 +1,12 @@
 {
 	"dividers": {
 		"left": {
-			"hard": " ",
-			"soft": " "
+			"hard": " ",
+			"soft": " "
 		},
 		"right": {
-			"hard": " ",
-			"soft": " "
+			"hard": " ",
+			"soft": " "
 		}
 	},
 	"spaces": 1,
@@ -19,7 +19,7 @@
 		},
 		"cwd": {
 			"args": {
-				"ellipsis": "…"
+				"ellipsis": "󰉋"
 			}
 		},
 

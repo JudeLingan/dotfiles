@@ -39,16 +39,5 @@
 				"priority": 40
 			}
 		]
-	},
-
-	"dividers": {
-		"left": {
-            "hard": " ",
-            "soft": "󱑽 "
-		},
-		"right": {
-            "hard": " ",
-            "soft": " 󱑽"
-		}
 	}
 }

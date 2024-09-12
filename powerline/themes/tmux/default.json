@@ -24,16 +24,5 @@
 				"function": "powerline.segments.common.net.hostname"
 			}
 		]
-	},
-
-	"dividers": {
-		"left": {
-            "hard": " ",
-            "soft": "󱑽 "
-		},
-		"right": {
-            "hard": " ",
-            "soft": " 󱑽"
-		}
 	}
 }
