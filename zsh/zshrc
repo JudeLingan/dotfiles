@@ -17,6 +17,10 @@ unsetopt autocd beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
+# Adding bin to path
+path+=('/home/jude/bin');
+export PATH
+
 # Aliases
 alias fd="cd ~; cd \$(find * -type d | fzf)"
 alias ls="ls --color=auto"

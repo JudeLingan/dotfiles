@@ -130,8 +130,10 @@ super + alt + b
 
 # volume keys
 XF86AudioRaiseVolume
+    dunstify "Volume Up"
 	volume.sh up
 XF86AudioLowerVolume
+    dunstify "Volume Down"
 	volume.sh down
 XF86AudioMute
 	volume.sh mute
