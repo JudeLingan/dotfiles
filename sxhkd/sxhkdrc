@@ -130,11 +130,11 @@ super + alt + b
 
 # volume keys
 XF86AudioRaiseVolume
-    volume_brightness.sh volume_up
+    /home/jude/bin/volume_brightness.sh volume_up
 XF86AudioLowerVolume
-	volume_brihgtness.sh volume_down
+	/home/jude/bin/volume_brightness.sh volume_down
 XF86AudioMute
-	volume_brightness.sh volume_mute
+	/home/jude/bin/volume_brightness.sh volume_mute
 
 # take a screenshot
 Print
