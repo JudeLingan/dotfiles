@@ -135,6 +135,10 @@ XF86AudioLowerVolume
 	/home/jude/bin/volume_brightness.sh volume_down
 XF86AudioMute
 	/home/jude/bin/volume_brightness.sh volume_mute
+XF86MonBrightnessUp
+    /home/jude/bin/volume_brightness.sh brightness_up
+XF86MonBrightnessDown
+    /home/jude/bin/volume_brightness.sh brightness_down
 
 # take a screenshot
 Print
