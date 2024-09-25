@@ -3,7 +3,7 @@
 	"groups": {
 		"hostname":         { "fg": "brightyellow", "bg": "mediumorange", "attrs": [] },
 		"environment":      { "fg": "white", "bg": "darkestgreen", "attrs": [] },
-		"mode":             { "fg": "black", "bg": "green", "attrs": ["bold"] },
+		"mode":             { "fg": "black", "bg": "lime", "attrs": ["bold"] },
 		"attached_clients": { "fg": "white", "bg": "darkestgreen", "attrs": [] }
 	},
 	"mode_translations": {
