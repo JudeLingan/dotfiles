@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     -- COLORSCHEMES
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP SERVERS
     "williamboman/mason.nvim",
