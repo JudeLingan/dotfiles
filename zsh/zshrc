@@ -24,6 +24,7 @@ export PATH
 # Aliases
 alias fd="cd ~; cd \$(find * -type d | fzf)"
 alias ls="ls --color=auto"
+alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 
 # Powerline
