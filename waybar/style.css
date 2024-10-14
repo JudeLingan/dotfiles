@@ -1,35 +1,51 @@
 * { all: initial; }
 
-@import "mocha.css";
+@import "rose-pine.css";
 
 * {
-  /* reference the color by using @color-name */
-  color: @text;
-  margin: 0px 8px;
+    /* reference the color by using @color-name */
+    color: @text;
+    margin: 0px 8px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+window#waybar {
+    /* you can also GTK3 CSS functions! */
+    background-color: alpha(@base, 0.3);
+    border-radius: 0px;
+    padding: 8px 0px;
+}
+
+#tray menu :hover {
+  background-color: @overlay;
+  border-radius: 10px;
+}
+
+#clock {
+    background-color: @pine;
+    padding: 0px 8px;
+}
+
+#network  {
+    background-color: @gold;
+    color: @base;
+}
+
+#workspaces  {
+    background-color: @subtle;
 }
 
 #workspaces button {
   padding: 0px 0px;
-  background-color: @base;
   color: @text;
-  margin: 0px -4px;
+  margin: 0px -6px;
   min-width: 0px;
 }
 
-window#waybar {
-  /* you can also GTK3 CSS functions! */
-  background-color: @base;
-  border: 2px solid alpha(@crust, 0.3);
-}
-
 #tray menu {
-  background-color: @mantle;
+  background-color: @overlay;
   border-radius: 10px;
   border: 2px solid @text;
   padding: 10px;
-}
-
-#tray menu :hover {
-  background-color: @surface1;
-  border-radius: 10px;
 }
