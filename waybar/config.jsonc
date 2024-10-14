@@ -22,12 +22,8 @@
         "idle_inhibitor",
         "pulseaudio",
         "network",
-        "temperature",
-        "backlight",
-        "keyboard-state",
-        "battery",
-        "battery#bat2",
         "clock",
+        "battery",
         "tray",
     ],
 // Modules configuration
