@@ -5,47 +5,122 @@
 * {
     /* reference the color by using @color-name */
     color: @text;
-    margin: 0px 8px;
     font-size: 16px;
-    border-radius: 10px;
-}
-
-window#waybar {
-    /* you can also GTK3 CSS functions! */
-    background-color: alpha(@base, 0.3);
-    border-radius: 0px;
-    padding: 8px 0px;
-}
-
-#tray menu :hover {
-  background-color: @overlay;
-  border-radius: 10px;
 }
 
 #clock {
+    margin-right: 8px;
+    border-radius: 10px;
+    margin-top: 12px;
     background-color: @pine;
     padding: 0px 8px;
 }
 
+#cpu {
+    margin-top: 12px;
+    background-color: @rose;
+    color: @base;
+    padding-left: 8px;
+    margin-left: 8px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#memory {
+    margin-top: 12px;
+    background-color: @rose;
+    color: @base;
+    padding-right: 8px;
+    margin-right: 8px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#idle_inhibitor  {
+    margin-right: 8px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: @love;
+    padding: 0px 8px;
+}
+#pulseaudio {
+    margin-right: 8px;
+    border-radius: 10px;
+    margin-top: 12px;
+    background-color: @foam;
+    color: @base;
+    padding: 0px 8px;
+}
+
 #network  {
+    margin-right: 8px;
+    border-radius: 10px;
+    margin-top: 12px;
     background-color: @gold;
     color: @base;
+    padding: 0px 8px;
+}
+
+#taskbar  {
+    margin-top: 12px;
+    background-color: @base;
+    padding: 0px 8px;
+    border-radius: 10px;
+}
+
+#taskbar button {
+    padding: 0px 8px;
+}
+
+#taskbar button.active  {
+    background-color: @subtle;
+    border-radius: 10px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-top: 12px;
+    background-color: @pine;
+    padding: 0px 8px;
+}
+
+#tray  {
+    border-radius: 10px;
+    margin-top: 12px;
+    background-color: @base;
+    padding: 0px 8px;
+    margin-right: 16px;
 }
 
 #workspaces  {
-    background-color: @subtle;
+    margin-top: 12px;
+    background-color: @base;
+    margin-left: 16px;
+    padding: 0px 8px;
+    border-radius: 10px;
 }
 
 #workspaces button {
   padding: 0px 0px;
   color: @text;
-  margin: 0px -6px;
+  margin: 0px 2px;
+  padding: 0px 4px;
   min-width: 0px;
 }
 
-#tray menu {
+menu {
   background-color: @overlay;
   border-radius: 10px;
   border: 2px solid @text;
   padding: 10px;
+}
+
+menu :hover {
+  background-color: @base;
+  border-radius: 10px;
+}
+
+window#waybar {
+    /* you can also GTK3 CSS functions! */
+    background: transparent;
 }
