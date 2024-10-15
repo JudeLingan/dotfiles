@@ -40,6 +40,7 @@
     border-color: @rose;
     border-right: none;
     padding-left: 8px;
+    padding-right: 8px;
     margin-left: 8px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -53,6 +54,7 @@
     border-color: @rose;
     border-left: none;
     padding-right: 8px;
+    padding-left: 8px;
     margin-right: 8px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
