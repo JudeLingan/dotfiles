@@ -16,14 +16,9 @@ require("lazy").setup({
     { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP SERVERS
-    "williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
-    "mfussenegger/nvim-dap",
-    "nvim-neotest/nvim-nio",
-    "rcarriga/nvim-dap-ui",
-    "mhartington/formatter.nvim",
-    "mfussenegger/nvim-lint",
+    {'neovim/nvim-lspconfig'},
+    {'hrsh7th/cmp-nvim-lsp'},
+    {'hrsh7th/nvim-cmp'},
 
     -- CODE COMPLETION
     -- Vscode-like pictograms

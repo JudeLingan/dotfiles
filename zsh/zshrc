@@ -19,6 +19,7 @@ bindkey -v
 
 # Adding bin to path
 path+=('/home/jude/bin');
+path+=('/home/jude/.cargo/bin');
 export PATH
 
 # Aliases
