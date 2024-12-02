@@ -17,8 +17,8 @@ require("lazy").setup({
 
     -- LSP SERVERS
     {'neovim/nvim-lspconfig'},
-    {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/nvim-cmp'},
+    {'hrsh7th/cmp-nvim-lsp'},
 
     -- CODE COMPLETION
     -- Vscode-like pictograms
