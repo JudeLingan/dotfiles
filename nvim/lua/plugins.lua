@@ -16,7 +16,11 @@ require("lazy").setup({
     { "rose-pine/neovim", name = "rose-pine" },
 
     -- LSP SERVERS
-    {'neovim/nvim-lspconfig'},
+    {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    },
     {'hrsh7th/nvim-cmp'},
     {'hrsh7th/cmp-nvim-lsp'},
 
