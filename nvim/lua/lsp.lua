@@ -1,5 +1,8 @@
 require("mason").setup()
-require("mason-lspconfig").setup()
+require("mason-lspconfig").setup {
+    -- ensure_installed = {},
+    automatic_installation = false,
+}
 
 require('lspconfig').gleam.setup({})
 require('lspconfig').ocamllsp.setup({})

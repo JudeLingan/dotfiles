@@ -21,8 +21,6 @@ require("lazy").setup({
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     },
-    {'hrsh7th/nvim-cmp'},
-    {'hrsh7th/cmp-nvim-lsp'},
 
     -- CODE COMPLETION
     -- Vscode-like pictograms
@@ -32,17 +30,12 @@ require("lazy").setup({
 	},
 	-- Auto-completion engine
 	{
-		"hrsh7th/nvim-cmp",
-		dependencies = {
-			"lspkind.nvim",
-			"hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
-			"hrsh7th/cmp-buffer", -- buffer auto-completion
-			"hrsh7th/cmp-path", -- path auto-completion
-			"hrsh7th/cmp-cmdline", -- cmdline auto-completion
-		},
-		config = function()
-			require("config.nvim-cmp")
-		end,
+	    "hrsh7th/nvim-cmp",
+	    "lspkind.nvim",
+	    "hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
+	    "hrsh7th/cmp-buffer", -- buffer auto-completion
+	    "hrsh7th/cmp-path", -- path auto-completion
+	    "hrsh7th/cmp-cmdline", -- cmdline auto-completion
 	},
 	-- Code snippet engine
 	{
@@ -67,14 +60,14 @@ require("lazy").setup({
 
 })
 
-local function setup_lsp_diags()
-  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics,
-    {
-      virtual_text = true,
-      signs = true,
-      update_in_insert = true,
-      underline = true,
-    }
-  )
-end
+--local function setup_lsp_diags()
+--  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+--    vim.lsp.diagnostic.on_publish_diagnostics,
+--    {
+--      virtual_text = true,
+--      signs = true,
+--      update_in_insert = true,
+--      underline = true,
+--    }
+--  )
+--end
