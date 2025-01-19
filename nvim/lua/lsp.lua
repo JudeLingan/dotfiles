@@ -8,3 +8,4 @@ require('lspconfig').gleam.setup({})
 require('lspconfig').rust_analyzer.setup({})
 require('lspconfig').jdtls.setup({})
 require('lspconfig').gdscript.setup{}
+require('lspconfig').gdshader_lsp.setup{}
