@@ -28,6 +28,10 @@ require("lazy").setup({
 		"onsails/lspkind.nvim",
 		event = { "VimEnter" },
 	},
+
+	-- Bracket, Parentheses, etc..
+	{ 'echasnovski/mini.nvim', version = false },
+
 	-- Auto-completion engine
 	{
 	    "hrsh7th/nvim-cmp",
@@ -60,14 +64,4 @@ require("lazy").setup({
 
 })
 
---local function setup_lsp_diags()
---  vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
---    vim.lsp.diagnostic.on_publish_diagnostics,
---    {
---      virtual_text = true,
---      signs = true,
---      update_in_insert = true,
---      underline = true,
---    }
---  )
---end
+require('mini.pairs').setup()
