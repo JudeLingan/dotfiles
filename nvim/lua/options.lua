@@ -9,4 +9,4 @@ vim.opt.expandtab = false
 vim.opt.signcolumn = 'yes'
 vim.opt.foldmethod = "indent"
 vim.opt.foldenable = false
-vim.opt.foldlevel = 20
+vim.opt.foldlevel = 2000

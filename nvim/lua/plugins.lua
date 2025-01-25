@@ -17,9 +17,9 @@ require("lazy").setup({
 
     -- LSP SERVERS
     {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
+		"williamboman/mason.nvim",
+    	"williamboman/mason-lspconfig.nvim",
+    	"neovim/nvim-lspconfig",
     },
 
     -- CODE COMPLETION
