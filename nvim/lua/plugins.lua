@@ -29,9 +29,6 @@ require("lazy").setup({
 		event = { "VimEnter" },
 	},
 
-	-- Bracket, Parentheses, etc..
-	{ 'echasnovski/mini.nvim', version = false },
-
 	-- Auto-completion engine
 	{
 	    "hrsh7th/nvim-cmp",
@@ -60,8 +57,15 @@ require("lazy").setup({
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' }
-    }
+    },
+
+	-- Autopairs
+	{
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equivalent to setup({}) function
+	},
 
 })
-
-require('mini.pairs').setup()
