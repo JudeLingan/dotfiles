@@ -154,6 +154,17 @@
     min-width: 0px;
 }
 
+#custom-notification {
+    background-color: @base;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 2px;
+	padding: 0px 8px;
+    border-radius: 10px;
+    margin-top: 12px;
+    border-color: @love;
+}
+
 menu {
     background-color: @overlay;
     border-radius: 10px;
