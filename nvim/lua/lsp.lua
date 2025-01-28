@@ -4,11 +4,14 @@ require("mason-lspconfig").setup {
     automatic_installation = true,
 }
 
-require'lspconfig'.gleam.setup({})
-require'lspconfig'.rust_analyzer.setup({})
-require'lspconfig'.jdtls.setup({})
-require'lspconfig'.gdscript.setup{}
-require'lspconfig'.gdshader_lsp.setup{}
+require ("mason-lspconfig").setup_handlers {
+        -- The first entry (without a key) will be the default handler
+        -- and will be called for each installed server that doesn't have
+        -- a dedicated handler.
+        function (server_name) -- default handler (optional)
+            require("lspconfig")[server_name].setup {}
+        end
+}
 
 vim.diagnostic.config({
 	virtual_text = true
