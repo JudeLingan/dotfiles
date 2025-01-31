@@ -31,3 +31,6 @@ alias grep="grep --color=auto"
 # Powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
+
+# Custom prompt
+#export PROMPT="%K{12}%F{0}%B%n%b%f%k %3~%B>%b "
