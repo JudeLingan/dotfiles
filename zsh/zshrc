@@ -31,3 +31,5 @@ alias grep="grep --color=auto"
 # Powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
+
+eval $(thefuck --alias)
