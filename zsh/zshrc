@@ -34,3 +34,5 @@ powerline-daemon -q
 
 # Custom prompt
 #export PROMPT="%K{12}%F{0}%B%n%b%f%k %3~%B>%b "
+
+eval $(thefuck --alias)
