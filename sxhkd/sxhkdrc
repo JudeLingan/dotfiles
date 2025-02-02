@@ -126,7 +126,7 @@ super + d
 
 # launch a browser
 super + alt + b
-	chromium
+	firefox
 
 # volume keys
 XF86AudioRaiseVolume
