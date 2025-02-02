@@ -23,7 +23,7 @@ path+=('/home/jude/.cargo/bin');
 export PATH
 
 # Aliases
-alias fd="cd ~; cd \$(find * -type d | fzf)"
+alias fd="cd ~; find -type d | fzf | cd"
 alias ls="ls --color=auto"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
