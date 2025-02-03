@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     -- COLORSCHEMES
-    { "rose-pine/neovim", name = "rose-pine" },
+    { "rose-pine/neovim" },
 
     -- LSP SERVERS
     {
