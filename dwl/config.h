@@ -24,14 +24,15 @@ static int log_level = WLR_ERROR;
 static const Rule rules[] = {
 	/* app_id             title       tags mask     isfloating   monitor */
 	/* examples: */
-	{ "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
+	{ "Gimp_EXAMPLE",     NULL,       0,			1,           -1 }, /* Start on currently visible tags floating, not tiled */
 	{ "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
+	{ "vrmonitor",		NULL,       0,			1,			0,		1,			-1,			0,		0	},
 };
 
 /* layout(s) */
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },
+	{ "[]=",	  tile },
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
@@ -128,7 +129,7 @@ static const Key keys[] = {
 	/* modifier                  key                 function        argument */
 	{ MODKEY,                    XKB_KEY_space,      spawn,          {.v = menucmd} },
 	{ MODKEY|WLR_MODIFIER_SHIFT, XKB_KEY_Return,     spawn,          {.v = termcmd} },
-	{ MODKEY|WLR_MODIFIER_ALT, XKB_KEY_b,          spawn,          {.v = browsercmd} },
+	{ MODKEY,                    XKB_KEY_b,          spawn,          {.v = browsercmd} },
 	{ MODKEY,                    XKB_KEY_j,          focusstack,     {.i = +1} },
 	{ MODKEY,                    XKB_KEY_k,          focusstack,     {.i = -1} },
 	{ MODKEY,                    XKB_KEY_i,          incnmaster,     {.i = +1} },
