@@ -1,0 +1,9 @@
+#!/bin/bash
+
+AUTOSTART=$(cat <<-END
+	waybar &
+	waypaper --restore &
+	swaync &
+END)
+
+~/.config/dwl/dwl -s "$AUTOSTART"
