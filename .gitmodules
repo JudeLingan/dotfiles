@@ -1,0 +1,3 @@
+[submodule "powerline/my-dwl"]
+	path = powerline/my-dwl
+	url = https://github.com/JudeLingan/my-dwl.git
