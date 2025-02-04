@@ -7,16 +7,16 @@
 	"spacing": 0, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"wlr/workspaces",
-		"wlr/mode",
-		"wlr/scratchpad",
+		"sway/workspaces",
+		"sway/mode",
+		"sway/scratchpad",
 		"cpu",
 		"memory",
 		"custom/media",
 		"custom/notification"
 	],
 	"modules-center": [
-		"wlr/taskbar"
+		"sway/taskbar"
 	],
 	"modules-right": [
 		"mpd",
@@ -27,7 +27,7 @@
 		"tray",
 	],
 	// Modules configuration
-	"wlr/workspaces": {
+	"sway/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
 		"warp-on-scroll": false,
@@ -42,10 +42,10 @@
 			"*": 10,
 		}
 	},
-	"wlr/mode": {
+	"sway/mode": {
 		"format": "<span style=\"italic\">{}</span>"
 	},
-	"wlr/scratchpad": {
+	"sway/scratchpad": {
 		"format": "{icon} {count}",
 		"show-empty": false,
 		"format-icons": ["", ""],
@@ -196,7 +196,7 @@
 			"hibernate": "systemctl hibernate"
 		}
 	},
-	"wlr/taskbar": {
+	"sway/taskbar": {
 		"format": "{icon}",
 		"icon-size": 16,
 		"icon-theme": "Numix-Circle",

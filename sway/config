@@ -253,4 +253,5 @@ default_border pixel 1
 exec autotiling
 exec swaync
 exec waybar
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always waypaper --restore
