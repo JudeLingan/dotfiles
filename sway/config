@@ -59,7 +59,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
 input 2385:5820:Kingston_HyperX_Pulsefire_FPS_Gaming_Mouse {
 	accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
-	pointer_accel 0.5 # set mouse sensitivity (between -1 and 1)
+	pointer_accel 0 # set mouse sensitivity (between -1 and 1)
 }
 
 ### Key bindings
@@ -246,13 +246,11 @@ bindsym $mod+r mode "resize"
 
 include /etc/sway/config.d/*
 
-#no titlebars
-for_window [title="^.*"] title_format ""
-default_border normal 0
-default_floating_border normal 0
+#window borders
+default_border pixel 1
 
 #autostart programs
-exec_always autotiling
-exec_always swaync
+exec autotiling
+exec swaync
+exec waybar
 exec_always waypaper --restore
-exec_always waybar
