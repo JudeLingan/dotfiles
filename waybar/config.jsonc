@@ -16,7 +16,7 @@
 		"custom/notification"
 	],
 	"modules-center": [
-		"sway/taskbar"
+		"wlr/taskbar"
 	],
 	"modules-right": [
 		"mpd",
@@ -196,7 +196,7 @@
 			"hibernate": "systemctl hibernate"
 		}
 	},
-	"sway/taskbar": {
+	"wlr/taskbar": {
 		"format": "{icon}",
 		"icon-size": 16,
 		"icon-theme": "Numix-Circle",
