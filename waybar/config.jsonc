@@ -7,16 +7,15 @@
 	"spacing": 0, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"sway/workspaces",
-		"sway/mode",
-		"sway/scratchpad",
+		"dwl/tags",
 		"cpu",
 		"memory",
 		"custom/media",
 		"custom/notification"
 	],
 	"modules-center": [
-		"wlr/taskbar"
+		"wlr/taskbar",
+		"dwl/window"
 	],
 	"modules-right": [
 		"mpd",
@@ -27,7 +26,7 @@
 		"tray",
 	],
 	// Modules configuration
-	"sway/workspaces": {
+	"wlr/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
 		"warp-on-scroll": false,
@@ -40,6 +39,18 @@
 		},
 		"persistent-workspaces":  {
 			"*": 10,
+		}
+	},
+	//"dwl/tags": {
+	//	"num-tags": 5
+	//},
+	"dwl/window": {
+		"format": "{title}",
+		"max-length": 50,
+   		"rewrite": {
+   		   "(.*) - Mozilla Firefox": "🌎 $1",
+   		   "(.*) - vim": " $1",
+   		   "(.*) - zsh": " [$1]"
 		}
 	},
 	"sway/mode": {

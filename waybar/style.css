@@ -88,6 +88,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-notification,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -299,6 +300,19 @@ label:focus {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
+}
+
+#tags button {
+	padding: 0 2px;
+	font-weight: bold;
+}
+
+#tags button.occupied {
+	color: #ffa000;
+}
+
+#tags button.focused {
+	color: #66cc99;
 }
 
 #scratchpad {
