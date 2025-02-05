@@ -249,7 +249,6 @@ include /etc/sway/config.d/*
 #window borders
 default_border pixel 1
 default_floating_border pixel 1
-hide_edge_borders both
 
 #colorscheme
 # class                 border  backgr. text    indicator child_border
