@@ -251,6 +251,14 @@ default_border pixel 1
 default_floating_border pixel 1
 hide_edge_borders both
 
+#colorscheme
+# class                 border  backgr. text    indicator child_border
+client.focused          #ebbcba #ebbcba #ebbcba	#ebbcba	  #ebbcba
+client.focused          #ebbcba #ebbcba #ebbcba	#ebbcba	  #ebbcba
+client.unfocused        #908caa #908caa	#908caa	#908caa	  #908caa
+client.urgent           #eb6f92 #eb6f92	#eb6f92	#eb6f92	  #eb6f92
+client.placeholder      #908caa #908caa	#908caa	#908caa	  #908caa
+
 #autostart programs
 exec autotiling
 exec swaync
