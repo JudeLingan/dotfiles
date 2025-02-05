@@ -249,6 +249,7 @@ include /etc/sway/config.d/*
 #window borders
 default_border pixel 1
 default_floating_border pixel 1
+hide_edge_borders both
 
 #autostart programs
 exec autotiling
