@@ -7,7 +7,7 @@
 	"spacing": 0, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"dwl/tags",
+		"sway/workspaces",
 		"cpu",
 		"memory",
 		"custom/media",
@@ -15,7 +15,6 @@
 	],
 	"modules-center": [
 		"wlr/taskbar",
-		"dwl/window"
 	],
 	"modules-right": [
 		"mpd",
@@ -26,7 +25,7 @@
 		"tray",
 	],
 	// Modules configuration
-	"wlr/workspaces": {
+	"sway/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
 		"warp-on-scroll": false,
