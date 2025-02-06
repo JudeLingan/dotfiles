@@ -22,4 +22,5 @@ polybar &
 picom -b &
 nitrogen --restore &
 dunst &
-xsetroot -cursor_name left_ptr &
+
+xset m 0 0
