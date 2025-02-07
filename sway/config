@@ -104,16 +104,24 @@ input 2385:5820:Kingston_HyperX_Pulsefire_FPS_Gaming_Mouse {
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
-    # Move the focused window with the same, but add Shift
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+    # Move the focused window with the same, but add Shift: SUCKY DEFAUULT BEHAVIOR
+    #bindsym $mod+Shift+$left move left
+    #bindsym $mod+Shift+$down move down
+    #bindsym $mod+Shift+$up move up
+    #bindsym $mod+Shift+$right move right
+	# CHAD CUSTOM BEHAVIOR
+	bindsym $mod+Shift+$left mark swap, focus left, swap container with mark swap
+	bindsym $mod+Shift+$down mark swap, focus down, swap container with mark swap
+	bindsym $mod+Shift+$up mark swap, focus up, swap container with mark swap
+	bindsym $mod+Shift+$right mark swap, focus right, swap container with mark swap
+
     # Ditto, with arrow keys
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
+
 #
 # Workspaces:
 #
