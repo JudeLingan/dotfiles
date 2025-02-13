@@ -1,1 +1,4 @@
 insensitive=true
+columns=4
+allow_images=true
+image_size=64
