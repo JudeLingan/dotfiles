@@ -74,4 +74,10 @@ require("lazy").setup({
 		-- this is equivalent to setup({}) function
 	},
 
+	-- Telescope
+    {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+      dependencies = { 'nvim-lua/plenary.nvim' }
+    },
+
 })
