@@ -18,6 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 set $menu rofi -show drun
 set $browser firefox
+set $files pcmanfm
 
 ### Output configuration
 #
@@ -68,6 +69,9 @@ input 2385:5820:Kingston_HyperX_Pulsefire_FPS_Gaming_Mouse {
 #
 	# Start a browser
     bindsym $mod+Alt+b exec $browser
+
+	# Start a file manager
+	bindsym $mod+Alt+f exec $files
 
     # Start a terminal
     bindsym $mod+Return exec $term
