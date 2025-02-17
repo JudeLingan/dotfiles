@@ -8,6 +8,9 @@ zstyle :compinstall filename '/home/jude/.zshrc'
 autoload -Uz compinit
 compinit
 
+# Environment variables
+VISUAL=nvim
+
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
