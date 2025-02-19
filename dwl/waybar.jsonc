@@ -7,14 +7,14 @@
 	"spacing": 0, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"sway/workspaces",
+		"dwl/tags",
 		"cpu",
 		"memory",
 		"custom/media",
 		"custom/notification"
 	],
 	"modules-center": [
-		"wlr/taskbar",
+		"dwl/window",
 	],
 	"modules-right": [
 		"mpd",
