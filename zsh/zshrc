@@ -36,6 +36,7 @@ powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
 # Custom prompt
-#export PROMPT="%K{12}%F{0}%B%n%b%f%k %3~%B>%b "
+#export PROMPT="%F{14}[%B%n%b]%f%F{12}%3~%B%f%B$%b "
 
 eval $(thefuck --alias)
+export PATH=/home/jude/.local/bin:/home/jude/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/home/jude/bin:/home/jude/.cargo/bin
