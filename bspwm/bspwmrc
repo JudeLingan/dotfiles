@@ -22,5 +22,3 @@ polybar &
 picom -b &
 nitrogen --restore &
 dunst &
-
-xset m 0 0
