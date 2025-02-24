@@ -26,6 +26,7 @@ require("lazy").setup({
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
+		"ranjithshegde/ccls.nvim"
 	},
 
 	-- CODE COMPLETION

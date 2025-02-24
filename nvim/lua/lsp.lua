@@ -15,6 +15,11 @@ require("mason-lspconfig").setup_handlers {
 
 require'lspconfig'.gdscript.setup{}
 
+require("ccls").setup(
+	{filetypes = {"c", "cpp", "opencl"}},
+	{lsp = {use_defaults=true}}
+)
+
 vim.diagnostic.config({
 	virtual_text = true
 })
