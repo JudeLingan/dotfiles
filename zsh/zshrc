@@ -1,5 +1,5 @@
-
 # The following lines were added by compinstall
+
 
 zstyle ':completion:*' completer _complete _ignored
 zstyle :compinstall filename '/home/jude/.zshrc'
@@ -34,6 +34,9 @@ alias grep="grep --color=auto"
 # Powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
+
+# Plugins
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Custom prompt
 #export PROMPT="%F{14}[%B%n%b]%f%F{12}%3~%B%f%B$%b "
