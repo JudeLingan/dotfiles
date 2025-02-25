@@ -11,3 +11,4 @@ vim.opt.foldmethod = "indent"
 vim.opt.foldenable = false
 vim.opt.foldlevel = 2000
 vim.opt.pumblend = 0
+vim.g.mapleader = ' '
