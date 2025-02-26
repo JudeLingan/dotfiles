@@ -1,9 +1,5 @@
 require("mason").setup()
-require("mason-lspconfig").setup {
-    -- ensure_installed = {},
-    automatic_installation = true,
-}
-
+require("mason-lspconfig").setup()
 require("mason-lspconfig").setup_handlers {
         -- The first entry (without a key) will be the default handler
         -- and will be called for each installed server that doesn't have
@@ -14,12 +10,15 @@ require("mason-lspconfig").setup_handlers {
 }
 
 require'lspconfig'.gdscript.setup{}
-
-require("ccls").setup(
-	{filetypes = {"c", "cpp", "opencl"}},
-	{lsp = {use_defaults=true}}
-)
+require'lspconfig'.ccls.setup{}
+require'lspconfig'.jdtls.setup{}
+require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.bashls.setup{}
+require'lspconfig'.lua_ls.setup{}
 
 vim.diagnostic.config({
-	virtual_text = true
+	underline = true,
+	virtual_text = false,
+	severity_sort = true,
+	float = {scope = 'line'}
 })
