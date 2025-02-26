@@ -3,6 +3,8 @@ require("rose-pine").setup({
     dark_variant = "main", -- main, moon, or dawn
     dim_inactive_windows = false,
     extend_background_behind_borders = true,
+	disable_background = false,
+	disable_float_background = false,
 
     enable = {
         terminal = true,
@@ -73,6 +75,6 @@ require("rose-pine").setup({
 })
 
 vim.cmd("colorscheme rose-pine")
--- vim.cmd("colorscheme rose-pine-main")
--- vim.cmd("colorscheme rose-pine-moon")
--- vim.cmd("colorscheme rose-pine-dawn")
+
+vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
+vim.api.nvim_set_hl(0, "NormalNC", {bg = "none"})
