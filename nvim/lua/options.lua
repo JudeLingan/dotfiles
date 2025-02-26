@@ -16,6 +16,4 @@ vim.opt.foldlevel = 2000
 
 vim.opt.termguicolors = true
 
-vim.g.mapleader = ' '
-
 vim.opt.winblend = 0
