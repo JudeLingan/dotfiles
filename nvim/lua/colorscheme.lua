@@ -61,6 +61,7 @@ require("rose-pine").setup({
         -- VertSplit = { fg = "muted", bg = "muted" },
 		Normal = {bg = "none"},
 		NormalNC = {bg = "none"},
+		Pmenu = {bg = "surface"},
     },
 
     before_highlight = function(group, highlight, palette)
@@ -77,6 +78,4 @@ require("rose-pine").setup({
 })
 
 vim.cmd("colorscheme rose-pine")
-
---vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
---vim.api.nvim_set_hl(0, "NormalNC", {bg = "none"})
+vim.opt.pumblend = 0
