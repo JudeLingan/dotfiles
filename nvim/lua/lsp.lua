@@ -10,7 +10,7 @@ require("mason-lspconfig").setup_handlers {
 }
 
 require'lspconfig'.gdscript.setup{}
-require'lspconfig'.ccls.setup{}
+require'lspconfig'.clangd.setup{}
 require'lspconfig'.jdtls.setup{}
 require'lspconfig'.rust_analyzer.setup{}
 require'lspconfig'.bashls.setup{}
