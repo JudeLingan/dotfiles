@@ -61,7 +61,8 @@ require("rose-pine").setup({
         -- VertSplit = { fg = "muted", bg = "muted" },
 		Normal = {bg = "none"},
 		NormalNC = {bg = "none"},
-		Pmenu = {bg = "surface"},
+		FloatBorder = {bg = "none", fg = "surface"},
+		CmpItemMenu = {bg = "surface"},
     },
 
     before_highlight = function(group, highlight, palette)
