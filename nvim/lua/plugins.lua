@@ -12,14 +12,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	-- COLORSCHEMES
-	{ "rose-pine/neovim" },
+	"rose-pine/neovim",
 
 	-- LSP SERVERS
-	{
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig",
-	},
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
 
 	-- CODE COMPLETION
 	-- Vscode-like pictograms
@@ -29,14 +27,13 @@ require("lazy").setup({
 	},
 
 	-- Auto-completion engine
-	{
-		"hrsh7th/nvim-cmp",
-		"lspkind.nvim",
-		"hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
-		"hrsh7th/cmp-buffer", -- buffer auto-completion
-		"hrsh7th/cmp-path", -- path auto-completion
-		"hrsh7th/cmp-cmdline", -- cmdline auto-completion
-	},
+	"hrsh7th/nvim-cmp",
+	"lspkind.nvim",
+	"hrsh7th/cmp-nvim-lsp", -- lsp auto-completion
+	"hrsh7th/cmp-buffer", -- buffer auto-completion
+	"hrsh7th/cmp-path", -- path auto-completion
+	"hrsh7th/cmp-cmdline", -- cmdline auto-completion
+
 	-- Code snippet engine
 	{
 		"L3MON4D3/LuaSnip",

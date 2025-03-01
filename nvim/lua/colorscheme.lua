@@ -1,3 +1,4 @@
+--TODO disable this script in tty
 require("rose-pine").setup({
     variant = "auto", -- auto, main, moon, or dawn
     dark_variant = "main", -- main, moon, or dawn
@@ -8,7 +9,7 @@ require("rose-pine").setup({
 
     enable = {
         terminal = true,
-        legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+        legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
         migrations = true, -- Handle deprecated options automatically
     },
 
@@ -77,6 +78,5 @@ require("rose-pine").setup({
         -- end
     end,
 })
-
 vim.cmd("colorscheme rose-pine")
 vim.opt.pumblend = 0

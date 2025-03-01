@@ -2,10 +2,10 @@
 
 case "$1" in
 	"brightness-up")
-		light -A 5
+		brightnessctl set +5%
 		;;
 	"brightness-down")
-		light -U 5
+		brightnessctl set 5%-
 		;;
 	"mute")
 		pactl set-sink-mute @DEFAULT_SINK@ toggle
