@@ -6,6 +6,7 @@ zstyle :compinstall filename '/home/jude/.zshrc'
 
 # Autocompletion
 autoload -Uz compinit
+autoload -Uz tetriscurses
 compinit
 
 # Environment variables
