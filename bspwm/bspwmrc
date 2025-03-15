@@ -21,4 +21,4 @@ bspc rule -a Screenkey manage=off
 polybar &
 picom -b &
 nitrogen --restore &
-dunst &
+dunst

@@ -55,15 +55,6 @@ require("lazy").setup({
 		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	},
 
-	-- Autopairs
-	{
-		'windwp/nvim-autopairs',
-		event = "InsertEnter",
-		config = true
-		-- use opts = {} for passing setup options
-		-- this is equivalent to setup({}) function
-	},
-
 	-- Telescope
     {
     'nvim-telescope/telescope.nvim', tag = '0.1.8',
