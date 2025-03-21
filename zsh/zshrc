@@ -8,6 +8,7 @@ zstyle :compinstall filename '/home/jude/.zshrc'
 autoload -Uz compinit
 autoload -Uz tetriscurses
 compinit
+setopt correct
 
 # Environment variables
 VISUAL=nvim
