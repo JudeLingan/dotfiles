@@ -14,3 +14,6 @@ vim.keymap.set('n', '<leader>tx', vim.cmd.tabclose)
 
 -- diagnostics
 vim.keymap.set('n', '<leader>ds', vim.diagnostic.open_float)
+
+-- copilot
+vim.keymap.set('n', '<leader>sc', vim.cmd.CopilotChatToggle)
