@@ -26,6 +26,8 @@ require("lazy").setup({
 		event = { "VimEnter" },
 	},
 
+	"github/copilot.vim",
+
 	-- Auto-completion engine
 	"hrsh7th/nvim-cmp",
 	"lspkind.nvim",
