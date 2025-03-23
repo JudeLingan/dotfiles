@@ -25,12 +25,12 @@ return {
 	-- AI Integration
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
-		branch = "main",
+		build = "make tiktoken",
 		opts = function()
 			local user = vim.env.USER or "User"
 			user = user:sub(1, 1):upper() .. user:sub(2)
 			return {
-				auto_insert_mode = true,
+				auto_insert_mode = false,
 				question_header = "  " .. user .. " ",
 				answer_header = "  Copilot ",
 				window = {

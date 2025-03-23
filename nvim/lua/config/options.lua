@@ -16,5 +16,6 @@ vim.opt.foldlevel = 2000
 
 vim.opt.winblend = 0
 vim.opt.cursorline = true
+vim.opt.completeopt = ("menu,menuone,popup,noselect")
 
 vim.g.mapleader = ' '
