@@ -22,25 +22,24 @@ return {
 		},
 	},
 
-	-- AI Integration
 	{
-		"CopilotC-Nvim/CopilotChat.nvim",
-		build = "make tiktoken",
+		"olimorris/codecompanion.nvim",
+		config = true,
 		opts = function()
-			local user = vim.env.USER or "User"
-			user = user:sub(1, 1):upper() .. user:sub(2)
 			return {
-				auto_insert_mode = false,
-				question_header = "  " .. user .. " ",
-				answer_header = "  Copilot ",
-				window = {
-					width = 0.4,
+				strategies = {
+					chat = {
+						adapter = "copilot",
+					},
+					inline = {
+						adapter = "copilot",
+					},
 				},
 			}
 		end,
 		dependencies = {
-			{ "github/copilot.vim" }, -- or zbirenbaum/copilot.lua
-			{ "nvim-lua/plenary.nvim", branch = "master" }, -- for curl, log and async functions
+			{"nvim-lua/plenary.nvim", branch = "master"},
+			"nvim-treesitter/nvim-treesitter",
 		},
 	},
 }
