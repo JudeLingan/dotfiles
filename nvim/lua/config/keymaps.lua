@@ -1,4 +1,3 @@
-vim.g.mapleader = ' '
 
 local scope = require('telescope.builtin')
 
