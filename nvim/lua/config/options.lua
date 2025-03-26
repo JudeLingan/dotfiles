@@ -19,3 +19,11 @@ vim.opt.cursorline = true
 vim.opt.completeopt = ("menu,menuone,popup,noselect")
 
 vim.g.mapleader = ' '
+
+vim.g.vimwiki_list = {
+	{
+		path = "~/Sync/vimwiki/",
+		syntax = "markdown", 
+		ext = "md"
+	},
+}
