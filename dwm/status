@@ -7,5 +7,4 @@ function writestatus {
 	done
 }
 
-killall -9 status
 writestatus & disown
