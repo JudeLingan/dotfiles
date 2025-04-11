@@ -1,0 +1,11 @@
+#!/bin/bash
+
+function writestatus {
+	while [ ! -z $(pgrep -x dwm) ]; do
+		xsetroot -name "$(date +"%I:%M")"
+		sleep 2
+	done
+}
+
+killall -9 status
+writestatus & disown
