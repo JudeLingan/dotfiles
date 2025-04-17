@@ -89,8 +89,8 @@ configuration {
 /*	kb-mode-complete: "Control+l";*/
 /*	kb-row-left: "Control+Page_Up";*/
 /*	kb-row-right: "Control+Page_Down";*/
-	kb-row-up: "Up,Control+n";
-	kb-row-down: "Down,Control+p";
+	kb-row-up: "Up,Control+p";
+	kb-row-down: "Down,Control+n";
 /*	kb-row-tab: "";*/
 /*	kb-element-next: "Tab";*/
 /*	kb-element-prev: "ISO_Left_Tab";*/
