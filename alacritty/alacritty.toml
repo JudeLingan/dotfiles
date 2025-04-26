@@ -5,26 +5,26 @@ WINIT_X11_SCALE_FACTOR="1"
 TERM = "alacritty"
 
 [window]
-opacity = 0.85
+opacity = 0.8
 
 [font]
 size = 12.0
 
 [font.bold]
 family = "Hack Nerd Font Mono"
-style = "Bold"
+style = "Mono Bold"
 
 [font.bold_italic]
 family = "Hack Nerd Font Mono"
-style = "Bold Italic"
+style = "Mono Bold Italic"
 
 [font.italic]
 family = "Hack Nerd Font Mono"
-style = "Italic"
+style = "Mono Italic"
 
 [font.normal]
 family = "Hack Nerd Font Mono"
-style = "Regular"
+style = "Mono Regular"
 
 [colors.primary]
 foreground = "#e0def4"
