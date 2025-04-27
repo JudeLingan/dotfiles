@@ -153,7 +153,7 @@ configuration {
 }
 
 * {
-	bg: #191724;
+	bg: rgba(25, 23, 36, 0.8);
 	cur: #1f1d2e;
 	fgd: #e0def4;
 	cmt: #6e6a86;
@@ -171,7 +171,7 @@ configuration {
 	active-background: @grn;
 	urgent-background: @red;
 
-	selected-background: @active-background;
+	selected-background: @grn;
 	selected-urgent-background: @urgent-background;
 	selected-active-background: @active-background;
 	separatorcolor: @active-background;
@@ -209,7 +209,7 @@ configuration {
 	padding: 1px ;
 }
 #element.normal.normal {
-	background-color: @background;
+	background-color: rgba(0, 0, 0, 0);
 	text-color:       @foreground;
 }
 #element.normal.urgent {
@@ -233,7 +233,7 @@ configuration {
 	text-color:       @background;
 }
 #element.alternate.normal {
-	background-color: @background;
+	background-color: rgba(0, 0, 0, 0);
 	text-color:       @foreground;
 }
 #element.alternate.urgent {
