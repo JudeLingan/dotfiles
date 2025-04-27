@@ -12,19 +12,19 @@ size = 12.0
 
 [font.bold]
 family = "Hack Nerd Font Mono"
-style = "Mono Bold"
+style = "Bold"
 
 [font.bold_italic]
 family = "Hack Nerd Font Mono"
-style = "Mono Bold Italic"
+style = "Bold Italic"
 
 [font.italic]
 family = "Hack Nerd Font Mono"
-style = "Mono Italic"
+style = "Italic"
 
 [font.normal]
 family = "Hack Nerd Font Mono"
-style = "Mono Regular"
+style = "Regular"
 
 [colors.primary]
 foreground = "#e0def4"
