@@ -5,7 +5,7 @@ configuration {
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-	show-icons: true;
+	show-icons: false;
 	terminal: "alacritty";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -164,7 +164,7 @@ configuration {
 	red: #eb6f92;
 	yel: #f6c177;
 
-	font: "Cartograph CF 12";
+	font: "Hack Nerd Font Propo 12";
 
 	foreground: @fgd;
 	background: @bg;
@@ -180,7 +180,7 @@ configuration {
 
 #window {
 	background-color: @background;
-	border:           3;
+	border:           2;
 	border-color:     @bordercolor;
 	padding:          5;
 }
@@ -198,7 +198,7 @@ configuration {
 }
 #listview {
 	fixed-height: 0;
-	border:       2px dash 0px 0px ;
+	border:       2px 0px 0px ;
 	border-color: @bordercolor;
 	spacing:      2px ;
 	scrollbar:    false;
@@ -221,8 +221,8 @@ configuration {
 	text-color:       @background;
 }
 #element.selected.normal {
-	background-color: @selected-background;
-	text-color:       @foreground;
+	background-color: rgba(0, 0, 0, 0);
+	text-color:       @bordercolor;
 }
 #element.selected.urgent {
 	background-color: @selected-urgent-background;
