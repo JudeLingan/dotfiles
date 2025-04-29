@@ -182,14 +182,14 @@ configuration {
 	background-color: @background;
 	border:           2;
 	border-color:     @bordercolor;
-	padding:          5;
+	padding:          0;
 }
 #mainbox {
 	border:  0;
-	padding: 5;
+	padding: 0;
 }
 #message {
-	border:       1px dash 0px 0px ;
+	border:       1px 0px ;
 	border-color: @separatorcolor;
 	padding:      1px ;
 }
@@ -202,7 +202,7 @@ configuration {
 	border-color: @bordercolor;
 	spacing:      2px ;
 	scrollbar:    false;
-	padding:      2px 0px 0px ;
+	padding:      6px 8px ;
 }
 #element {
 	border:  0;
@@ -261,7 +261,7 @@ configuration {
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    1px ;
+	padding:    6px 8px;
 }
 #case-indicator {
 	spacing:    0;
