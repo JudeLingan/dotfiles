@@ -8,7 +8,7 @@ zstyle :compinstall filename '/home/jude/.zshrc'
 autoload -Uz compinit
 autoload -Uz tetriscurses
 compinit
-setopt correct
+#setopt correct
 
 # Environment variables
 VISUAL=nvim
@@ -29,7 +29,7 @@ export PATH
 
 # Aliases
 alias fd="cd ~; find -type d | fzf | cd"
-alias ls="ls --color=auto"
+alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 
