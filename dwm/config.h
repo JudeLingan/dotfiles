@@ -70,6 +70,11 @@ static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *screenshotcmd[]  = { "screengrab", "-r", NULL };
 
+static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
+static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
+static const char *brightnessup { "brightnessctl", "set", "+5%", NULL };
+static const char *brightnessdown { "brightnessctl", "set", "-5%", NULL };
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
@@ -107,6 +112,11 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ 0,                            XK_Print,  spawn,          {.v = screenshotcmd} },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = upvol } },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
+	{ 0,                            XF86XK_AudioMute, spawn, {.v = mutevol } },
+	{ 0,                            XF86XK_MonBrightnessUp, spawn, {.v = brightnessup } },
+	{ 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdown } },
 };
 
 /* button definitions */
