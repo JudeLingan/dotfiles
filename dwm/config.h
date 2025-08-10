@@ -1,3 +1,4 @@
+#include <X11/XF86keysym.h>
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -72,8 +73,9 @@ static const char *screenshotcmd[]  = { "screengrab", "-r", NULL };
 
 static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
-static const char *brightnessup { "brightnessctl", "set", "+5%", NULL };
-static const char *brightnessdown { "brightnessctl", "set", "-5%", NULL };
+static const char *mutevol[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
+static const char *brightnessup[]  = { "brightnessctl", "set", "+5%", NULL };
+static const char *brightnessdown[] = { "brightnessctl", "set", "-5%", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
