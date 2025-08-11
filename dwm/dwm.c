@@ -1750,16 +1750,16 @@ col(Monitor *m)
 	if (n > m->nmaster)
 		mw = m->nmaster ? m->ww * m->mfact : 0;
 	else
-		mw = m->ww;
-	for (i = x = y = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
+		mw = m->ww - m->gap->gappx;
+	for (i = 0, x = y = m->gap->gappx, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
 		if (i < m->nmaster) {
 			w = (mw - x) / (MIN(n, m->nmaster) - i);
-			resize(c, x + m->wx, m->wy, w - (2 * c->bw), m->wh - (2 * c->bw), 0);
-			x += WIDTH(c);
+			resize(c, x + m->wx, m->wy + m->gap->gappx, w - (2 * c->bw), m->wh - (2 * c->bw) - 2*m->gap->gappx, 0);
+			x += WIDTH(c) + m->gap->gappx;
 		} else {
-			h = (m->wh - y) / (n - i);
-			resize(c, x + m->wx, m->wy + y, m->ww - x - (2 * c->bw), h - (2 * c->bw), 0);
-			y += HEIGHT(c);
+			h = (m->wh - y) / (n - i) - m->gap->gappx;
+			resize(c, x + m->wx, m->wy + y, m->ww - x - (2 * c->bw) - m->gap->gappx, h - (2 * c->bw), 0);
+			y += HEIGHT(c) + m->gap->gappx;
 		}
 }
 
