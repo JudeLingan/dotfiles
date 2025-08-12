@@ -56,10 +56,11 @@ static const Layout layouts[] = {
 /* key definitions */
 #define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
-	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
-	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
-	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
-	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
+	{ 0, 0, NULL, 0}
+//	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+//	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+//	{ MODKEY|ShiftMask,             KEY,      tag,            {.ui = 1 << TAG} }, \
+//	{ MODKEY|ControlMask|ShiftMask, KEY,      toggletag,      {.ui = 1 << TAG} },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -77,9 +78,38 @@ static const char *mutevol[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "to
 static const char *brightnessup[]  = { "brightnessctl", "set", "+5%", NULL };
 static const char *brightnessdown[]  = { "brightnessctl", "set", "5%-", NULL };
 
-static const Key keys[] = {
+/* custom functions */
+void setlayoutex(const Arg *arg) {
+	setlayout(&((Arg) { .v = &layouts[arg->i] }));
+}
+
+void viewex(const Arg *arg) {
+	view(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void viewall(const Arg *arg) {
+	view(&((Arg){.ui = ~0}));
+}
+
+void toggleviewex(const Arg *arg) {
+	toggleview(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void tagex(const Arg *arg) {
+	tag(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void toggletagex(const Arg *arg) {
+	toggletag(&((Arg) { .ui = 1 << arg->ui }));
+}
+
+void tagall(const Arg *arg) {
+	tag(&((Arg){.ui = ~0}));
+}
+
+static const Key keys[] = { {0, 0, NULL, 0} };
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
+/*	{ MODKEY,                       XK_p,      spawn,          {.v = roficmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
@@ -123,7 +153,7 @@ static const Key keys[] = {
 	{ 0,                            XF86XK_AudioMute, spawn, {.v = mutevol } },
 	{ 0,                            XF86XK_MonBrightnessUp, spawn, {.v = brightnessup } },
 	{ 0,                            XF86XK_MonBrightnessDown, spawn, {.v = brightnessdown } },
-};
+};*/
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
@@ -142,3 +172,30 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
+/* signal definitions */
+/* signum must be greater than 0 */
+/* trigger signals using `xsetroot -name "fsignal:<signame> [<type> <value>]"` */
+static Signal signals[] = {
+	/* signum              function */
+	{ "focusstack",        focusstack },
+	{ "setmfact",          setmfact },
+	{ "togglebar",         togglebar },
+	{ "incnmaster",        incnmaster },
+	{ "togglefloating",    togglefloating },
+	{ "focusmon",          focusmon },
+	{ "tagmon",            tagmon },
+	{ "zoom",              zoom },
+	{ "view",              view },
+	{ "viewall",           viewall },
+	{ "viewex",            viewex },
+	{ "toggleviewex",      toggleviewex },
+	{ "toggleview",        toggleview },
+	{ "tagex",             tagex },
+	{ "tagall",            tagall },
+	{ "toggletagex",       toggletagex },
+	{ "killclient",        killclient },
+	{ "quit",              quit },
+	{ "setlayoutex",       setlayoutex },
+	{ "setgaps",           setgaps },
+	{ "togglefullscr",     togglefullscr },
+};
