@@ -7,13 +7,16 @@ XF86MonBrightness{Down,Up}
 super + shift + Return
 	alacritty
 
-# dwm
-
 super + p
 	rofi -show drun
 
+# dwm
+
 super + Return
 	dwmc zoom
+
+super + {d,i}
+	dwmc incnmaster {-,+}1
 
 super + {k,j}
 	dwmc focusstack {-,+}1
