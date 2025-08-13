@@ -180,7 +180,7 @@ configuration {
 
 #window {
 	background-color: @background;
-	border:           2;
+	border:           1;
 	border-color:     @bordercolor;
 	padding:          0;
 }
@@ -198,7 +198,7 @@ configuration {
 }
 #listview {
 	fixed-height: 0;
-	border:       2px 0px 0px ;
+	border:       1px 0px 0px ;
 	border-color: @bordercolor;
 	spacing:      2px ;
 	scrollbar:    false;
