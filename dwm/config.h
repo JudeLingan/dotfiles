@@ -14,10 +14,12 @@ static const char col_gray2[]       = "#26233a";
 static const char col_gray3[]       = "#908caa";
 static const char col_gray4[]       = "#e0def4";
 static const char col_cyan[]        = "#ebbcba";
+static const char col_urgborder[]   = "#ff0000";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
+	[SchemeUrg]  = { col_gray4, col_cyan,  col_urgborder  },
 };
 
 /* tagging */
@@ -64,12 +66,6 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *screenshotcmd[]  = { "screengrab", "-r", NULL };
-
-static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
-static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
-static const char *mutevol[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
-static const char *brightnessup[]  = { "brightnessctl", "set", "+5%", NULL };
-static const char *brightnessdown[]  = { "brightnessctl", "set", "5%-", NULL };
 
 /* custom functions */
 void setlayoutex(const Arg *arg) {

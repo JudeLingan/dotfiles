@@ -38,6 +38,9 @@ alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
+# Pywal
+source ~/.cache/wal/colors-tty.sh
+
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
