@@ -34,7 +34,7 @@ super + shift + c
 	dwmc killclient
 
 super + shift + {q,r}
-	dwmc quit
+	dwmc quit {0,1}
 
 super + {c,t,m,space}
 	dwmc setlayoutex {0,1,2,3}

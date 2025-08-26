@@ -16,16 +16,12 @@ function getbattery {
 	fi
 }
 
-function writestatus {
-	while [ ! -z $(pgrep -x dwm) ]; do
-		text=""
-		text+=$(date +"%I:%M")
-		if [ "$(getbattery)" != "NULL" ]; then
-			text+="|$(getbattery)"
-		fi
-		xsetroot -name "$text"
-		sleep 5
-	done
-}
-
-writestatus & disown
+while true; do
+	text=""
+	text+=$(date +"%I:%M")
+	if [ "$(getbattery)" != "NULL" ]; then
+		text+="|$(getbattery)"
+	fi
+	xsetroot -name "$text"
+	sleep 5
+done
