@@ -71,11 +71,6 @@ return {
 				},
 
 				before_highlight = function(group, highlight, palette)
-					-- Disable all undercurls
-					-- if highlight.undercurl then
-					--     highlight.undercurl = false
-					-- end
-					--
 					-- Change palette colour
 					-- if highlight.fg == palette.pine then
 					--     highlight.fg = palette.foam
@@ -84,7 +79,13 @@ return {
 		},
 		config = function (_, opts)
 			require("rose-pine").setup(opts)
-			vim.cmd.colorscheme("rose-pine")
+		end,
+	},
+
+	{
+		'uZer/pywal16.nvim',
+		config = function (_, opts)
+			vim.cmd.colorscheme("pywal16")
 		end,
 	},
 

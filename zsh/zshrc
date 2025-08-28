@@ -6,7 +6,6 @@ zstyle :compinstall filename '/home/jude/.zshrc'
 
 # Autocompletion
 autoload -Uz compinit
-autoload -Uz tetriscurses
 compinit
 #setopt correct
 
@@ -34,7 +33,7 @@ alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
 
-# Powerline
+#powerline
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
@@ -44,8 +43,5 @@ source ~/.cache/wal/colors-tty.sh
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Custom prompt
-#export PROMPT="%F{14}[%B%n%b]%f%F{12}%3~%B%f%B$%b "
 
-eval $(thefuck --alias)
 export PATH=/home/jude/.local/bin:/home/jude/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:/home/jude/bin:/home/jude/.cargo/bin

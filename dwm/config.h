@@ -3,23 +3,22 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const Gap default_gap        = {.isgap = 1, .realgap = 12, .gappx = 12};
+static const Gap default_gap        = {.isgap = 1, .realgap = 8, .gappx = 8};
 static const unsigned int snap      = 0;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Hack Nerd Font Propo:size=12" };
 static const char dmenufont[]       = "Hack Nerd Font Propo:size=12";
-static const char col_gray1[]       = "#191724";
-static const char col_gray2[]       = "#26233a";
-static const char col_gray3[]       = "#908caa";
-static const char col_gray4[]       = "#e0def4";
-static const char col_cyan[]        = "#ebbcba";
-static const char col_urgborder[]   = "#ff0000";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray1,  col_cyan  },
-	[SchemeUrg]  = { col_gray4, col_cyan,  col_urgborder  },
+static char normbgcolor[]           = "#222222";
+static char normbordercolor[]       = "#444444";
+static char normfgcolor[]           = "#bbbbbb";
+static char selfgcolor[]            = "#eeeeee";
+static char selbordercolor[]        = "#005577";
+static char selbgcolor[]            = "#005577";
+static char *colors[][3] = {
+       /*               fg           bg           border   */
+       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
 
 /* tagging */
@@ -62,7 +61,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_gray2, "-sf", col_gray1, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *roficmd[]  = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *screenshotcmd[]  = { "screengrab", "-r", NULL };
