@@ -1132,9 +1132,9 @@ loadxrdb()
       xrdb = XrmGetStringDatabase(resm);
 
       if (xrdb != NULL) {
-        XRDB_LOAD_COLOR("color12", normbordercolor);
+        XRDB_LOAD_COLOR("color8", normbordercolor);
         XRDB_LOAD_COLOR("background", normbgcolor);
-        XRDB_LOAD_COLOR("color12", normfgcolor);
+        XRDB_LOAD_COLOR("color8", normfgcolor);
         XRDB_LOAD_COLOR("color14", selbordercolor);
         XRDB_LOAD_COLOR("background", selbgcolor);
         XRDB_LOAD_COLOR("color14", selfgcolor);
