@@ -83,9 +83,15 @@ return {
 	},
 
 	{
-		'uZer/pywal16.nvim',
+		"RedsXDD/neopywal.nvim",
+		name = "neopywal",
+		opts = {
+			transparent_background = true,
+		},
+
 		config = function (_, opts)
-			vim.cmd.colorscheme("pywal16")
+			require("neopywal").setup(opts)
+			vim.cmd.colorscheme("neopywal")
 		end,
 	},
 
