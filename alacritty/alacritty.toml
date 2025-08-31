@@ -8,7 +8,7 @@ WINIT_X11_SCALE_FACTOR="1"
 TERM = "alacritty"
 
 [window]
-opacity = 0.8
+opacity = 0.9
 
 [font]
 size = 12.0
