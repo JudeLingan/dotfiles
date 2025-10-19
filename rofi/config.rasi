@@ -153,3 +153,10 @@ configuration {
 }
 
 @import "~/.cache/wal/colors-rofi-dark"
+
+#window {
+	opacity: 0.8;
+	border: 1;
+	border-color: @foreground;
+	border-radius: 12;
+}
