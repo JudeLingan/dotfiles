@@ -158,5 +158,4 @@ configuration {
 	opacity: 0.8;
 	border: 1;
 	border-color: @foreground;
-	border-radius: 12;
 }

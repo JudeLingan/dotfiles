@@ -11,6 +11,7 @@ compinit
 
 # Environment variables
 VISUAL=nvim
+export ANDROID_HOME=$HOME/Android/Sdk
 
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
@@ -27,17 +28,15 @@ alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
-alias ndev="nix develop --command $SHELL"
 
 #powerline
 powerline-daemon -q
 
-# Pywal
-source ~/.cache/wal/colors-tty.sh
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/nvm/init-nvm.sh
 source /usr/share/powerline/bindings/zsh/powerline.zsh
+source ~/.cache/wal/colors-tty.sh
 
-export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:$HOME/bin:$HOME/.cargo/bin:$HOME/.nix-profile/bin
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:$HOME/bin:$HOME/.cargo/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
