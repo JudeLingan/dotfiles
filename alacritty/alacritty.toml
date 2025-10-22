@@ -14,19 +14,19 @@ opacity = 0.8
 size = 12.0
 
 [font.bold]
-family = "Hack Nerd Font Mono"
+family = "Terminess Nerd Font Mono"
 style = "Bold"
 
 [font.bold_italic]
-family = "Hack Nerd Font Mono"
+family = "Terminess Nerd Font Mono"
 style = "Bold Italic"
 
 [font.italic]
-family = "Hack Nerd Font Mono"
+family = "Terminess Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font Mono"
+family = "Terminess Nerd Font Mono"
 style = "Regular"
 
 [mouse]
