@@ -10,11 +10,9 @@ compinit
 #setopt correct
 
 # Environment variables
-VISUAL=nvim
+export VISUAL=nvim
 export ANDROID_HOME=$HOME/Android/Sdk
 
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -28,10 +26,6 @@ alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
-
-#powerline
-powerline-daemon -q
-
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
