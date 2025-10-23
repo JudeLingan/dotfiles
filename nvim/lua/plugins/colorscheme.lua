@@ -20,6 +20,7 @@ return {
 				styles = {
 					bold = true,
 					italic = true,
+					transparency = true,
 				},
 
 				groups = {
@@ -84,6 +85,8 @@ return {
 			require("neopywal").setup(opts)
 		end,
 	},
+
+
 
 	-- Treesitter
 	{
