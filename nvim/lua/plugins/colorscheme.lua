@@ -61,15 +61,6 @@ return {
 					-- },
 				},
 
-				highlight_groups = {
-					-- Comment = { fg = "foam" },
-					-- VertSplit = { fg = "muted", bg = "muted" },
-					Normal = {bg = "none"},
-					NormalNC = {bg = "none"},
-					FloatBorder = {bg = "none", fg = "surface"},
-					CmpItemMenu = {bg = "surface"},
-				},
-
 				before_highlight = function(group, highlight, palette)
 					-- Change palette colour
 					-- if highlight.fg == palette.pine then

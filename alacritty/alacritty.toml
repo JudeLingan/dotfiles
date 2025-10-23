@@ -3,12 +3,15 @@
 [general]
 import = ["~/.cache/wal/colors-alacritty.toml"]
 
+# Colors section of "Alacritty - TOML configuration file format"
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
+
 [env]
 WINIT_X11_SCALE_FACTOR="1"
 TERM = "alacritty"
 
 [window]
-opacity = 0.85
+opacity = 1
 
 [font]
 size = 12.0
