@@ -82,7 +82,6 @@ return {
 
 		config = function (_, opts)
 			require("neopywal").setup(opts)
-			vim.cmd.colorscheme("neopywal")
 		end,
 	},
 
@@ -95,4 +94,11 @@ return {
 		end
 	},
 
+	{
+		"raddari/last-color.nvim",
+		config = function ()
+			local theme = require("last-color").recall() or "default"
+			vim.cmd.colorscheme(theme)
+		end,
+	},
 }
