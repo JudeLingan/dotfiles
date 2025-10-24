@@ -10,12 +10,6 @@
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
-if [[ -x "$HOME/.config/river/env" ]]; then
-	echo "env found"
-	$HOME/.config/river/env
-fi
-
-
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super+Shift Return spawn alacritty
 riverctl map normal Super P spawn "rofi -show drun"
@@ -176,3 +170,6 @@ done
 #autostart
 
 riverctl spawn waybar
+riverctl spawn kanshi
+riverctl spawn swaync
+wal -Rs &
