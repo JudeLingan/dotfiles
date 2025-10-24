@@ -172,3 +172,7 @@ rivertile -view-padding 6 -outer-padding 6 &
 riverctl list-inputs | grep pointer | while read line; do
 	riverctl input $line accel-profile flat
 done
+
+#autostart
+
+riverctl spawn waybar
