@@ -167,8 +167,10 @@ riverctl list-inputs | grep pointer | while read line; do
 	riverctl input $line accel-profile flat
 done
 
-#autostart
+#serverside decorations
+riverctl rule-add ssd
 
+#autostart
 riverctl spawn waybar
 riverctl spawn kanshi
 riverctl spawn swaync
