@@ -14,6 +14,7 @@ window#waybar {
     border-bottom: 1px solid @fg;
     transition-property: background-color;
     transition-duration: .5s;
+	color: @fg;
 }
 
 window#waybar.hidden {
@@ -264,6 +265,7 @@ label:focus {
 #tags button {
 	padding: 0 2px;
 	font-weight: 100;
+	color: @fg
 }
 
 #tags button.occupied {
