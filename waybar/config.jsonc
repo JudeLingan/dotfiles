@@ -7,14 +7,14 @@
 	"spacing": 0, // Gaps between modules (4px)
 	// Choose the order of the modules
 	"modules-left": [
-		"hyprland/workspaces",
+		"river/tags",
 		"cpu",
 		"memory",
 		"custom/media",
 		"custom/notification"
 	],
 	"modules-center": [
-		"wlr/taskbar",
+		"river/window",
 	],
 	"modules-right": [
 		"mpd",

@@ -1,13 +1,18 @@
+@import "/home/jude/.cache/wal/colors-waybar.css";
+
+@define-color bg @background;
+@define-color fg @foreground;
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
+	color: @fg;
     font-family: Hack Nerd Font Propo;
     font-size: 12px;
 }
 
 window#waybar {
     background-color: @bg;
-    border-bottom: 1px solid rgba(144, 140, 170, 0.8);
-    color: #ffffff;
+    border-bottom: 1px solid @fg;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -57,7 +62,6 @@ button:hover {
 #workspaces button {
     padding: 0 2px;
     background-color: transparent;
-    color: #ffffff;
 }
 
 /*#workspaces button:hover {
@@ -69,7 +73,6 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    color: #ebbcba;
 }
 
 #mode {
@@ -96,7 +99,6 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
 }
 
 #window,
@@ -115,27 +117,17 @@ button:hover {
 }
 
 #clock {
-    color: #e0def4;
 }
 
 #battery {
-    color: #e0def4;
 }
 
 #battery.charging, #battery.plugged {
-    color: #9ccfd8;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: #f53c3c;
+	color: @color5
 }
 
 #power-profiles-daemon {
@@ -143,15 +135,12 @@ button:hover {
 }
 
 #power-profiles-daemon.performance {
-	color: #f6c177;
 }
 
 #power-profiles-daemon.balanced {
-	color: #9ccfd8;
 }
 
 #power-profiles-daemon.power-saver {
-    color: #31748f;
 }
 
 label:focus {
@@ -160,40 +149,31 @@ label:focus {
 
 #cpu {
     /*background-color: #2ecc71;*/
-    color: #e0def4;
 }
 
 #memory {
-    color: #e0def4;
 }
 
 #disk {
-    color: #e0def4;
 }
 
 #backlight {
-    color: #e0def4;
 }
 
 #network {
-    color: #e0def4;
 }
 
 #network.disconnected {
-	color: #eb6f92;
 }
 
 #pulseaudio {
-    color: #e0def4;
 }
 
 #pulseaudio.muted {
-    color: #eb6f92;
 }
 
 #wireplumber {
     background-color: #fff0f5;
-    color: #000000;
 }
 
 #wireplumber.muted {
@@ -202,7 +182,6 @@ label:focus {
 
 #custom-media {
     background-color: #66cc99;
-    color: #2a5c45;
     min-width: 100px;
 }
 
@@ -215,7 +194,6 @@ label:focus {
 }
 
 #custom-notification {
-	color: #e0def4;
 }
 
 #temperature {
@@ -227,7 +205,6 @@ label:focus {
 }
 
 #tray {
-	color: #e0def4;
 }
 
 #tray > .passive {
@@ -245,12 +222,10 @@ label:focus {
 
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
-    color: #2d3436;
 }
 
 #mpd {
     background-color: #66cc99;
-    color: #2a5c45;
 }
 
 #mpd.disconnected {
@@ -267,7 +242,6 @@ label:focus {
 
 #language {
     background: #00b093;
-    color: #740864;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;
@@ -275,7 +249,6 @@ label:focus {
 
 #keyboard-state {
     background: #97e1ad;
-    color: #000000;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
@@ -295,11 +268,9 @@ label:focus {
 }
 
 #tags button.occupied {
-	color: #ffa000;
 }
 
 #tags button.focused {
-	color: #66cc99;
 }
 
 #scratchpad {
@@ -316,7 +287,6 @@ label:focus {
 
 #privacy-item {
     padding: 0 5px;
-    color: white;
 }
 
 #privacy-item.screenshare {
