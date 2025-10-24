@@ -180,4 +180,3 @@ riverctl spawn waybar
 riverctl spawn kanshi
 riverctl spawn swaync
 riverctl spawn /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-wal -Rs &
