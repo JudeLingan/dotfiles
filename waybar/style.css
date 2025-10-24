@@ -5,7 +5,6 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-	color: @fg;
     font-family: Hack Nerd Font Propo;
     font-size: 12px;
 }
@@ -264,13 +263,14 @@ label:focus {
 
 #tags button {
 	padding: 0 2px;
-	font-weight: bold;
 }
 
 #tags button.occupied {
+	font-weight: bold;
 }
 
 #tags button.focused {
+	color: @color14;
 }
 
 #scratchpad {
