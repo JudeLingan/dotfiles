@@ -263,10 +263,11 @@ label:focus {
 
 #tags button {
 	padding: 0 2px;
+	font-weight: 100;
 }
 
 #tags button.occupied {
-	font-weight: bold;
+	font-weight: 900;
 }
 
 #tags button.focused {
