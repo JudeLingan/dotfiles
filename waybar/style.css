@@ -1,7 +1,4 @@
-@import "/home/jude/.cache/wal/colors-waybar.css";
-
-@define-color bg @background;
-@define-color fg @foreground;
+@import "colors-waybar.css";
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -99,6 +96,7 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
+	color: @fg;
 }
 
 #window,
@@ -114,20 +112,6 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#clock {
-}
-
-#battery {
-}
-
-#battery.charging, #battery.plugged {
-}
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-	color: @color5
 }
 
 #power-profiles-daemon {
@@ -149,27 +133,6 @@ label:focus {
 
 #cpu {
     /*background-color: #2ecc71;*/
-}
-
-#memory {
-}
-
-#disk {
-}
-
-#backlight {
-}
-
-#network {
-}
-
-#network.disconnected {
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
 }
 
 #wireplumber {
@@ -273,7 +236,7 @@ label:focus {
 }
 
 #tags button.focused {
-	color: @color14;
+	color: @accent;
 }
 
 #scratchpad {
