@@ -74,12 +74,18 @@ return {
 		end,
 	},
 
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
+		config = true,
+	},
+
 	-- Treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function ()
 			require("config.treesitter")
-		end
+		end,
 	},
 }
