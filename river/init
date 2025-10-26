@@ -10,7 +10,6 @@
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
-source ./colors-river.sh
 
 # Super+Shift+Return to start an instance of alacritty
 riverctl map normal Super+Shift Return spawn alacritty
@@ -148,12 +147,6 @@ done
 # Weird keybinds
 riverctl map normal Super+Shift T spawn $HOME/bin/theme.sh
 
-# Set background and border color
-riverctl background-color $color_accent
-riverctl border-color-focused $color_fg
-riverctl border-color-unfocused $color_subtle
-riverctl border-width 2
-
 # Cursor settings
 riverctl set-cursor-warp on-fucus-change
 riverctl hide-cursor when-typing enabled
@@ -177,6 +170,8 @@ riverctl list-inputs | grep pointer | while read line; do
 	riverctl input $line accel-profile flat
 done
 
+riverctl allow-tearing enabled
+
 #serverside decorations
 riverctl rule-add ssd
 
@@ -185,3 +180,10 @@ riverctl spawn waybar
 riverctl spawn kanshi
 riverctl spawn swaync
 riverctl spawn /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Set background and border color
+source $HOME/.config/river/colors-river.sh
+riverctl background-color $color_accent
+riverctl border-color-focused $color_fg
+riverctl border-color-unfocused $color_subtle
+riverctl border-width 2
