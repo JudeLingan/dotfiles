@@ -1,14 +1,12 @@
 @import "colors-rofi.rasi"
 
 window {
-	background-color: @bg;
-	border-color: @fg;
 	border: 1;
 }
 
 inputbar {
 	children: [textbox-prompt-colon, entry, prompt];
-	border-color: @fg;
+	border-color: @foreground;
 	border: 0 0 1;
 }
 
@@ -18,31 +16,14 @@ listview {
 }
 
 textbox-prompt-colon {
-	text-color: @accent;
 	str: "❯";
-}
-
-prompt {
-	color: @subtle;
+	color: @foreground;
 }
 
 entry {
-	color: @fg;
-	placeholder-color: @subtle;
 	placeholder: "";
 }
 
 element.normal.normal, element.alternate.normal {
-	text-color: @fg;
 	background-color: transparent;
-}
-
-element.selected.normal, element.selected.active {
-	text-color: @accent-contrast;
-	background-color: @accent;
-}
-
-element.normal.urgent, element.alternate.urgent {
-	text-color: @urgent-contrast;
-	background-color: @urgent;
 }
