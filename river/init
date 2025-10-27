@@ -148,7 +148,7 @@ done
 riverctl map normal Super+Shift T spawn $HOME/bin/theme.sh
 
 # Cursor settings
-riverctl set-cursor-warp on-fucus-change
+riverctl set-cursor-warp on-focus-change
 riverctl hide-cursor when-typing enabled
 
 # Set keyboard repeat rate
