@@ -228,14 +228,15 @@ label:focus {
 #tags button {
 	padding: 0 2px;
 	font-weight: 100;
-	color: @fg
+	color: @subtle
 }
 
 #tags button.occupied {
-	font-weight: 900;
+	color: @fg
 }
 
 #tags button.focused {
+	font-weight: 900;
 	color: @accent;
 }
 
