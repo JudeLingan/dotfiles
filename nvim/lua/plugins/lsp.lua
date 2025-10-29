@@ -5,6 +5,14 @@ return {
 	"neovim/nvim-lspconfig",
 
 	{
+		"mfussenegger/nvim-jdtls",
+		config = function (_, opts)
+			vim.lsp.config("jdtls", opts)
+			vim.lsp.enable("jdtls")
+		end
+	},
+
+	{
 		"michaelb/sniprun",
 		branch = "master",
 
