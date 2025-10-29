@@ -189,4 +189,4 @@ source $HOME/.config/river/colors-river.sh
 riverctl background-color $color_accent
 riverctl border-color-focused $color_fg
 riverctl border-color-unfocused $color_subtle
-riverctl border-width 2
+riverctl border-width 1
