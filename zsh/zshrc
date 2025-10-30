@@ -31,7 +31,6 @@ alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/nvm/init-nvm.sh
 source /usr/share/powerline/bindings/zsh/powerline.zsh
-source ~/.cache/wal/colors-tty.sh
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:$HOME/bin:$HOME/.cargo/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
