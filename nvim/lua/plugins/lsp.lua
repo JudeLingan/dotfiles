@@ -12,6 +12,8 @@ return {
 		end
 	},
 
+	'habamax/vim-godot',
+
 	{
 		"michaelb/sniprun",
 		branch = "master",
