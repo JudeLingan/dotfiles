@@ -26,7 +26,6 @@ alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
-alias godot=godot-mono
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
