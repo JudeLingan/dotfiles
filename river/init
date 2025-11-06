@@ -190,3 +190,8 @@ riverctl background-color $color_accent
 riverctl border-color-focused $color_fg
 riverctl border-color-unfocused $color_subtle
 riverctl border-width 1
+
+#xdg config
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river
+systemctl --user restart xdg-desktop-portal
