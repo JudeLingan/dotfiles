@@ -1,8 +1,4 @@
 * {
-	/* Theme settings */
-    highlight: bold italic;
-    scrollbar: true;
-
     /* Gruvbox light colors */
     gruvbox-light-bg0:          #fbf1c7;
     gruvbox-light-bg0-soft:     #f2e5bc;
