@@ -12,5 +12,5 @@ return {
 		end
 	},
 
-	'habamax/vim-godot',
+	"niscolas/nvim-godot",
 }
