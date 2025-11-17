@@ -7,3 +7,5 @@ vim.diagnostic.config({
 	severity_sort = true,
 	float = {scope = 'line'}
 })
+
+vim.lsp.enable('gdscript')
