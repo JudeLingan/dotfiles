@@ -207,7 +207,7 @@ style "murrine-button"  = "murrine-wider" {
 	engine "murrine" {
 		border_colors = { mix(0.25, @btn_fg_color, @btn_bg_color), mix(0.25, @btn_fg_color, @btn_bg_color) }
 		roundness = 4
-		gradient_shades = { 1.06, 1.0, 1.0, .94 }
+		gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
 	}
 }
 
