@@ -11,11 +11,17 @@ return {
 			require("mason").setup()
 			require("mason-lspconfig").setup()
 
+			-- LSP config
+			vim.lsp.config('*', {
+				root_markers = { '.git', '.hg' },
+			})
+
 			-- Godot LSP
-			require("lspconfig")["gdscript"].setup({
+			vim.lsp.config.gdscript = {
 				name = "godot",
 				cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
-			})
+			}
+			vim.lsp.enable("gdscript")
 
 			vim.diagnostic.config({
 				underline = true,
