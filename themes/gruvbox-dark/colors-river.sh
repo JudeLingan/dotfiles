@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-color_bg="0x$1"
-color_fg="0x$2"
-color_subtle="0x$4"
-color_accent="0x$3"
-color_error="0x$5"
+color_bg="0x282828"
+color_fg="0xebdbb2"
+color_subtle="0x928374"
+color_accent="0x8ec07c"
+color_error="0xfb4934"
