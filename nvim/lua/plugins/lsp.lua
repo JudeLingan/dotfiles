@@ -11,12 +11,19 @@ return {
 			require("mason").setup()
 			require("mason-lspconfig").setup()
 
+			-- Godot LSP
+			require("lspconfig")["gdscript"].setup({
+				name = "godot",
+				cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+			})
+
 			vim.diagnostic.config({
 				underline = true,
 				virtual_text = false,
 				severity_sort = true,
 				float = {scope = 'line'}
 			})
+
 		end,
 	},
 
@@ -26,38 +33,5 @@ return {
 			vim.lsp.config("jdtls", opts)
 			vim.lsp.enable("jdtls")
 		end
-	},
-
-	{
-		"lommix/godot.nvim",
-		lazy = true,
-		cmd = { "GodotDebug", "GodotBreakAtCursor", "GodotStep", "GodotQuit", "GodotContinue" },
-		opts = {
-			-- Path to your Godot executable
-			bin = "godot",
-
-			-- DAP configuration
-			dap = {
-				host = "127.0.0.1",
-				port = 6006,
-			},
-
-			-- GUI settings for console (passed to nvim_open_win)
-			gui = {
-				console_config = {
-					anchor = "SW",
-					border = "double",
-					col = 1,
-					height = 10,
-					relative = "editor",
-					row = 99999,
-					style = "minimal",
-					width = 99999,
-				},
-			},
-
-			-- Expose user commands automatically (optional)
-			expose_commands = true,
-		},
 	},
 }
