@@ -17,6 +17,7 @@ fi
 # Super+Shift+Return to start an instance of alacritty
 riverctl map normal Super+Shift Return spawn alacritty
 riverctl map normal Super P spawn "rofi -show drun"
+riverctl map normal Super B spawn "killall -SIGUSR1 waybar"
 
 # Super+Q to close the focused view
 riverctl map normal Super+Shift C close
