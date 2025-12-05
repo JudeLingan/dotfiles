@@ -15,7 +15,8 @@ window#waybar {
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    background-color: transparent;
+	opacity: 0;
 }
 
 /*
