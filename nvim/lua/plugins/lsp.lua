@@ -39,6 +39,6 @@ return {
 		config = function (_, opts)
 			vim.lsp.config("jdtls", opts)
 			vim.lsp.enable("jdtls")
-		end
+		end,
 	},
 }
