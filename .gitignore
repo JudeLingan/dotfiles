@@ -1,0 +1,3 @@
+./nvim/lazy-lock.json
+./nvim/lua/plugins/colors-nvim.lua
+**/colors-wallpaper.*
