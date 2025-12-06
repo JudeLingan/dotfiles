@@ -20,6 +20,7 @@ return {
 			vim.lsp.config.gdscript = {
 				name = "godot",
 				cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+				filetypes = { "gd", "tscn", "gdshader" },
 			}
 			vim.lsp.enable("gdscript")
 
