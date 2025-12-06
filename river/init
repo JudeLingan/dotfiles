@@ -18,6 +18,7 @@ fi
 riverctl map normal Super+Shift Return spawn alacritty
 riverctl map normal Super P spawn "rofi -show drun"
 riverctl map normal Super B spawn "killall -SIGUSR1 waybar"
+riverctl map normal Super W spawn $HOME/bin/wallpaper
 
 # Super+Q to close the focused view
 riverctl map normal Super+Shift C close
@@ -191,6 +192,8 @@ riverctl background-color $color_accent
 riverctl border-color-focused $color_fg
 riverctl border-color-unfocused $color_subtle
 riverctl border-width 1
+
+swaybg -i $HOME/.config/colors-wallpaper/* -m fill & disown
 
 #xdg config
 systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
