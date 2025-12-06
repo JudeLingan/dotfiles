@@ -1,4 +1,11 @@
 return {
+	-- Transparent
+	{
+		'tribela/transparent.nvim',
+		event = 'VimEnter',
+		config = true,
+	},
+
 	-- Treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
