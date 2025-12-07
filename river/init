@@ -181,7 +181,7 @@ riverctl allow-tearing enabled
 riverctl rule-add ssd
 
 #autostart
-riverctl spawn waybar
+waybar & disown
 riverctl spawn kanshi
 riverctl spawn swaync
 riverctl spawn /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
