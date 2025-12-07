@@ -3,7 +3,14 @@ return {
 	{
 		'tribela/transparent.nvim',
 		event = 'VimEnter',
-		config = true,
+		opts = {
+			auto = true,
+			extra_groups = {},
+			excludes = { 'CursorLineNr', 'SignColumn' }
+		},
+		config = function(_, opts)
+			require('transparent').setup(opts)
+		end,
 	},
 
 	-- Treesitter
