@@ -19,7 +19,6 @@
 	"modules-right": [
 		"mpd",
 		"pulseaudio",
-		"network",
 		"clock",
 		"battery",
 		"tray",
