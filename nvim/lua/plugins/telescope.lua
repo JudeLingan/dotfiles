@@ -2,7 +2,7 @@ return {
 	-- Telescope
 	{
 		'nvim-telescope/telescope.nvim',
-		branch = '0.1.x',
+		tag = 'v0.2.0',
 		dependencies = { 'nvim-lua/plenary.nvim' },
 		opts = {
 			-- Default configuration for telescope goes here:
