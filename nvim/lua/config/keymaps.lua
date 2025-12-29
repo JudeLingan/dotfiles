@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>tx', vim.cmd.tabclose)
 -- diagnostics
 vim.keymap.set('n', '<leader>ds', vim.diagnostic.open_float)
 vim.keymap.set('n', '<leader>df', vim.lsp.buf.code_action)
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
 
 -- copilot
 vim.keymap.set('n', '<leader>cc', vim.cmd.CopilotChatToggle)
