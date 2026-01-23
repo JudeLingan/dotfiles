@@ -28,6 +28,10 @@ alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
 alias te="tmux new-session -d 'nvim' \; new-window -d \; attach"
 
+alias t="tmux"
+alias g="git"
+alias v="nvim"
+
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
