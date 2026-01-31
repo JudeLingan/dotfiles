@@ -6,7 +6,7 @@ return {
 		opts = {
 			auto = true,
 			extra_groups = {},
-			excludes = { 'CursorLineNr', 'SignColumn' }
+			excludes = { 'CursorLineNr' }
 		},
 		config = function(_, opts)
 			require('transparent').setup(opts)
