@@ -22,7 +22,7 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # Aliases
-alias fd="cd ~ && cd \$(find -type d | fzf)"
+alias fd="cd \$(find -type d | fzf)"
 alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
@@ -31,6 +31,7 @@ alias te="tmux new-session 'nvim' \; new-window \;"
 alias t="tmux"
 alias g="git"
 alias v="nvim"
+alias h="cd ~"
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
