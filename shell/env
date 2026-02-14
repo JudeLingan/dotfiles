@@ -21,7 +21,7 @@ alias g="git"
 alias v="nvim"
 alias h="cd ~"
 
-alias f="fzf --smart-case --tiebreak=length,chunk"
+alias f="fzf --smart-case --tiebreak=length,chunk --no-extended"
 alias fd="cd \$(find -type d | f)"
 alias fv="nvim \$(find -type f | f)"
 alias ft="tmux \$(find -type d | f)"
