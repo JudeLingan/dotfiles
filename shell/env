@@ -1,0 +1,36 @@
+# Environment variables
+export VISUAL=nvim
+export ANDROID_HOME=$HOME/Android/Sdk
+export VCPKG_ROOT=$HOME/.local/share/vcpkg/
+
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt autocd beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# Aliases
+alias ls="lsd"
+alias t0="tmux attach -t 0"
+alias grep="grep --color=auto"
+alias te="tmux new-session 'nvim' \; new-window \;"
+
+alias t="tmux"
+alias g="git"
+alias v="nvim"
+alias h="cd ~"
+
+alias f="fzf --smart-case --tiebreak=length,chunk"
+alias fd="cd \$(find -type d | f)"
+alias fv="nvim \$(find -type f | f)"
+alias ft="tmux \$(find -type d | f)"
+
+alias tw="tmux new-window"
+alias tk="tmux kill-window"
+alias tks="tmux kill-session"
+
+# Variables
+export ELECTRON_OZONE_PLATFORM_HINT=auto
+
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin:$HOME/bin:$HOME/.cargo/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools 2>/dev/null
