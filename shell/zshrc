@@ -11,4 +11,4 @@ eval "$(starship init zsh)"
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source .config/shell/env
+source ~/.config/shell/env
