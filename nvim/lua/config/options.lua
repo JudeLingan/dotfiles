@@ -18,6 +18,8 @@ vim.opt.winblend = 0
 vim.opt.cursorline = true
 vim.opt.completeopt = ("menu,menuone,popup,noselect")
 
+vim.opt.autoread = true
+
 vim.g.mapleader = ' '
 
 vim.g.vimwiki_list = {
