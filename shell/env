@@ -1,3 +1,13 @@
+# Custom funcs
+
+sai() {
+	if [ -x sai.sh ]; then
+		./sai.sh
+	else
+		tmux new-session 'nvim' \; new-window \;
+	fi
+}
+
 # Environment variables
 export VISUAL=nvim
 export ANDROID_HOME=$HOME/Android/Sdk
