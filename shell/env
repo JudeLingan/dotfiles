@@ -24,7 +24,7 @@ bindkey -v
 alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
-alias te="tmux new-session 'nvim' \; new-window \;"
+alias te="sai"
 
 alias t="tmux"
 alias g="git"
