@@ -29,10 +29,10 @@ return {
 	},
 
 	{
-		"mfussenegger/nvim-jdtls",
-		config = function (_, opts)
-			vim.lsp.config("jdtls", opts)
-			vim.lsp.enable("jdtls")
+		'nvim-java/nvim-java',
+		config = function()
+			require('java').setup()
+			vim.lsp.enable('jdtls')
 		end,
 	},
 }
