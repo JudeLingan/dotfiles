@@ -1,4 +1,3 @@
-
 local scope = require('telescope.builtin')
 
 -- telescope
