@@ -41,6 +41,8 @@ alias tw="tmux new-window"
 alias tk="tmux kill-window"
 alias tks="tmux kill-session"
 
+alias vw="nvim -c 'VimwikiIndex'"
+
 # Variables
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 
