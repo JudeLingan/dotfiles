@@ -20,8 +20,6 @@ bindkey -v
 # End of lines configured by zsh-newuser-install
 
 # Aliases
-eval $(thefuck --alias)
-
 alias ls="lsd"
 alias t0="tmux attach -t 0"
 alias grep="grep --color=auto"
