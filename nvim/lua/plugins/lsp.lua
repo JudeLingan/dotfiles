@@ -17,6 +17,7 @@ return {
 			})
 
 			vim.lsp.enable("gdscript")
+			vim.lsp.enable("ts_ls")
 
 			vim.diagnostic.config({
 				underline = true,
