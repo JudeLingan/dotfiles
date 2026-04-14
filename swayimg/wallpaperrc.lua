@@ -1,21 +1,22 @@
-[general]
-mode = gallery
+swayimg.set_mode("gallery")
 
-[viewer]
-window = #000000ff
+swayimg.gallery.on_key("Return", function()
+	print(swayimg.gallery.get_image().path)
+	swayimg.exit()
+end)
 
-[gallery]
-window = #000000ff
+swayimg.gallery.on_key("h", function()
+	swayimg.gallery.switch_image("left")
+end)
 
-[list]
-recursive = yes
+swayimg.gallery.on_key("j", function()
+	swayimg.gallery.switch_image("down")
+end)
 
-[info]
-show = no
+swayimg.gallery.on_key("k", function()
+	swayimg.gallery.switch_image("up")
+end)
 
-[keys.gallery]
-h = step_left
-j = step_down
-k = step_up
-l = step_right
-Return = exec echo '%'; exit
+swayimg.gallery.on_key("l", function()
+	swayimg.gallery.switch_image("right")
+end)
