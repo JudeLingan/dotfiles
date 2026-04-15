@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-    background-color: alpha(@bg, 0.9);
+    background-color: alpha(@bg, 0.8);
     border-bottom: 1px solid @fg;
     transition-property: background-color;
     transition-duration: 0s;
