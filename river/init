@@ -14,8 +14,8 @@ if [ -x $HOME/.config/river/profile.sh ]; then
 	$HOME/.config/river/profile.sh
 fi
 
-# Super+Shift+Return to start an instance of alacritty
-riverctl map normal Super+Shift Return spawn alacritty
+# Super+Shift+Return to start an instance of foot
+riverctl map normal Super+Shift Return spawn foot
 riverctl map normal Super P spawn "rofi -show drun"
 riverctl map normal Super B spawn "killall -SIGUSR1 waybar"
 riverctl map normal Super W spawn $HOME/bin/wallpaper
