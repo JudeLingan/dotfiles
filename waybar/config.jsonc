@@ -14,14 +14,14 @@
 		"custom/notification"
 	],
 	"modules-center": [
-		"river/window",
+		"river/window"
 	],
 	"modules-right": [
 		"mpd",
 		"pulseaudio",
 		"battery",
 		"clock",
-		"tray",
+		"tray"
 	],
 	// Modules configuration
 	"hyprland/workspaces": {
@@ -36,12 +36,12 @@
 			"empty": ""
 		},
 		"persistent-workspaces":  {
-			"*": 10,
+			"*": 10
 		}
 	},
-	//"dwl/tags": {
-	//	"num-tags": 5
-	//},
+	"dwl/tags": {
+		"num-tags": 5
+	},
 	"dwl/window": {
 		"format": "{title}",
 		"max-length": 50,
@@ -114,8 +114,8 @@
 	"temperature": {
 		// "thermal-zone": 2,
 		// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-		"critical-threshold": 80,
 		// "format-critical": "{temperatureC}°C {icon}",
+		"critical-threshold": 80,
 		"format": "{temperatureC}°C {icon}",
 		"format-icons": ["", "", ""]
 	},
