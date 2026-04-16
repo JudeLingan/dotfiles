@@ -45,10 +45,10 @@
 	"dwl/window": {
 		"format": "{title}",
 		"max-length": 50,
-   		"rewrite": {
-   		   "(.*) - Mozilla Firefox": "🌎 $1",
-   		   "(.*) - vim": " $1",
-   		   "(.*) - zsh": " [$1]"
+		"rewrite": {
+			"(.*) - Mozilla Firefox": "🌎 $1",
+			"(.*) - vim": " $1",
+			"(.*) - zsh": " [$1]"
 		}
 	},
 	"sway/mode": {
@@ -224,11 +224,11 @@
 		"tooltip": false,
 		"format": "{icon}",
 		"format-icons": {
-		"notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
-		"none": "",
-		"dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
-		"dnd-none": ""
-	},
+			"notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+			"dnd-none": ""
+		},
 		"return-type": "json",
 		"exec-if": "which swaync-client",
 		"exec": "swaync-client -swb",
