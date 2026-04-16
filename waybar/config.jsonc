@@ -14,7 +14,7 @@
 		"custom/notification"
 	],
 	"modules-center": [
-		"river/window"
+		"hyprland/window"
 	],
 	"modules-right": [
 		"mpd",
@@ -28,7 +28,7 @@
 		"disable-scroll": true,
 		"all-outputs": true,
 		"warp-on-scroll": false,
-		"format": "{icon}",
+		"format": "{name}",
 		"format-icons": {
 			"urgent": "",
 			"active": "",
