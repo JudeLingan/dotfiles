@@ -6,6 +6,8 @@
 # it is intended to be a simpler alternative to something like flavours that encourages manual intervention after themes are created
 # it is a starting point for a colorscheme, not the final result
 
+template_dir="$HOME/.config/theme-templates"
+
 generate_file() {
 	if [ $# -ne 1 ]; then
 		echo "generate_file called with invalid number of inputs (should be 1)"
@@ -17,13 +19,16 @@ generate_file() {
 		exit 1
 	fi
 
+	rp="$(awk -v td="${#template_dir}" '{print substr($0, td+2)}' <(echo $1))"
+	mkdir -p "$(dirname $rp)"
+
 	patterns=""
 
 	for i in "${!colors[@]}"; do
 		patterns="$patterns-e 's/{{base\($(printf '%02x\|%02X' $i $i)\)-hex}}/${colors[$i]}/' "
 	done
 
-	eval "sed $patterns \"$1\"" > "$(basename $1)"
+	eval "sed $patterns \"$1\"" > "$rp"
 }
 
 if [ $# -ne 1 ]; then
@@ -65,12 +70,12 @@ done
 echo
 
 # load all files from templates and args
-if ! [ -e "$HOME/.config/theme-templates" ]; then
+if ! [ -e "$template_dir" ]; then
 	echo "theme-templates folder doesn't exist"
 	exit 1
 fi
 
-for template in "$(find $HOME/.config/theme-templates -maxdepth 1 -mindepth 1)"; do
+for template in $(find $template_dir -mindepth 1 -type f); do
 	if [ -n "$template" ]; then
 		generate_file "$template"
 	fi
