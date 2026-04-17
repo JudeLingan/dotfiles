@@ -6,11 +6,27 @@
 # it is intended to be a simpler alternative to something like flavours that encourages manual intervention after themes are created
 # it is a starting point for a colorscheme, not the final result
 
-function generate_file {
-	echo "func"
+generate_file() {
+	if [ $# -ne 1 ]; then
+		echo "generate_file called with invalid number of inputs (should be 1)"
+		exit 1
+	fi
+
+	if ! [ -e "$1" ]; then
+		echo "generate_file called on file that doesn't exist somehow ($1)"
+		exit 1
+	fi
+
+	patterns=""
+
+	for i in "${!colors[@]}"; do
+		patterns="$patterns-e 's/{{base\($(printf '%02x\|%02X' $i $i)\)-hex}}/${colors[$i]}/' "
+	done
+
+	eval "sed $patterns \"$1\"" > "$(basename $1)"
 }
 
-if [ $# != 1 ]; then
+if [ $# -ne 1 ]; then
 	echo "please provide name of base16 yaml file to read
 some examples can be found at https://github.com/tinted-theming/schemes/blob/spec-0.11/base16"
 	exit 1
@@ -46,6 +62,7 @@ eval "$(awk '
 for i in "${!colors[@]}"; do
 	printf "base%02X: #%s\n" $i "${colors[$i]}"
 done
+echo
 
 # load all files from templates and args
 if ! [ -e "$HOME/.config/theme-templates" ]; then
@@ -53,6 +70,8 @@ if ! [ -e "$HOME/.config/theme-templates" ]; then
 	exit 1
 fi
 
-for template in "$(ls $HOME/.config/theme-templates)"; do
-	echo "generating: $template"
+for template in "$(find $HOME/.config/theme-templates -maxdepth 1 -mindepth 1)"; do
+	if [ -n "$template" ]; then
+		generate_file "$template"
+	fi
 done
