@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-theme_is_dark="prefer-light"
+variant="light"

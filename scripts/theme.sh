@@ -46,4 +46,4 @@ swaybg -i ~/.config/colors-wallpaper/* -m fill &
 
 gsettings set org.gnome.desktop.interface gtk-theme default
 gsettings set org.gnome.desktop.interface gtk-theme colors-gtk
-gsettings set org.gnome.desktop.interface color-scheme "$theme_is_dark"
+gsettings set org.gnome.desktop.interface color-scheme "prefer-$variant"
