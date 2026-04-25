@@ -37,6 +37,9 @@ some examples can be found at https://github.com/tinted-theming/schemes/blob/spe
 	exit 1
 fi
 
+echo "#!/usr/bin/env bash" > settings.sh
+chmod +x settings.sh
+
 # load all colors into an array
 eval "$(awk '
 	BEGIN {
@@ -61,7 +64,19 @@ eval "$(awk '
 
 		out = out " [0x" key "]=\"" value "\""
 	}
+	
+	$1 == "name:" {
+		print "echo '"'"'name="substr($0, index($0, " ") + 1)"'"'"' >> settings.sh"
+	}
+	$1 == "author:" {
+		print "echo '"'"'author="substr($0, index($0, " ") + 1)"'"'"' >> settings.sh"
+	}
+	$1 == "variant:" {
+		print "echo '"'"'variant="substr($0, index($0, " ") + 1)"'"'"' >> settings.sh"
+	}
 ' $1)"
+
+source settings.sh
 
 # print colors
 for i in "${!colors[@]}"; do
