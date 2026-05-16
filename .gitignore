@@ -3,8 +3,6 @@
 !.gitignore
 !alacritty
 !alacritty/**
-!dwm
-!dwm/**
 !foot
 !foot/**
 !git
@@ -48,4 +46,3 @@ rofi/colors-rofi.rasi
 waybar/colors-waybar.css
 foot/colors-foot.ini
 **/colors-wallpaper
-dwm/dwm
