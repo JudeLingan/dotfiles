@@ -1,0 +1,6 @@
+require('plugins.alpha')
+vim.schedule(function()
+	require('plugins.lsp')
+	require('plugins.completion')
+	require('plugins.telescope')
+end)

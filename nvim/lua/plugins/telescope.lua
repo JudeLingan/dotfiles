@@ -1,36 +1,7 @@
-return {
-	-- Telescope
-	{
-		'nvim-telescope/telescope.nvim',
-		tag = 'v0.2.0',
-		dependencies = { 'nvim-lua/plenary.nvim' },
-		opts = {
-			-- Default configuration for telescope goes here:
-			-- config_key = value,
-			mappings = {
-				i = {
-					-- map actions.which_key to <C-h> (default: <C-/>)
-					-- actions.which_key shows the mappings for your picker,
-					-- e.g. git_{create, delete, ...}_branch for the git_branches picker
-					["<C-h>"] = "which_key"
-				}
-			}
-		},
-		pickers = {
-			-- Default configuration for builtin pickers goes here:
-			-- picker_name = {
-			--   picker_config_key = value,
-			--   ...
-			-- }
-			-- Now the picker_config_key will be applied every time you call this
-			-- builtin picker
-		},
-		extensions = {
-			-- Your extension configuration goes here:
-			-- extension_name = {
-			--   extension_config_key = value,
-			-- }
-			-- please take a look at the readme of the extension you want to configure
-		},
-	}
-}
+local scope = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', scope.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', scope.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', scope.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', scope.help_tags, { desc = 'Telescope help tags' })
+vim.keymap.set('n', '<leader>fd', scope.diagnostics, { desc = 'Telescope help tags' })
+vim.keymap.set('n', '<leader>fr', scope.lsp_references, { desc = 'Telescope LSP references' })

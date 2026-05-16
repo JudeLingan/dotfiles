@@ -1,3 +1,4 @@
-require('config.options')
-require('config.plugins')
-require('config.keymaps')
+vim.loader.enable()
+require('config')
+require('plugins')
+pcall(require, 'local')
