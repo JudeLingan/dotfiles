@@ -4,6 +4,23 @@ vim.pack.add({
 	_G.gh('nvim-telescope/telescope.nvim'),
 })
 
+-- setup
+require('telescope').setup{
+	defaults = {
+		-- Default configuration for telescope goes here:
+		-- config_key = value,
+		mappings = {
+			i = {
+				-- map actions.which_key to <C-h> (default: <C-/>)
+				-- actions.which_key shows the mappings for your picker,
+				-- e.g. git_{create, delete, ...}_branch for the git_branches picker
+				["<C-h>"] = "which_key"
+			}
+		}
+	},
+}
+
+-- keymaps
 local scope = require('telescope.builtin')
 
 vim.keymap.set('n', '<leader>ff', scope.find_files, { desc = 'Telescope find files' })
