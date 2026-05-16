@@ -42,6 +42,7 @@ alacritty/colors-alacritty.toml
 hypr/colors-hypr.conf
 nvim/nvim-pack-lock.json
 river/colors-river.sh
+river/profile.sh
 rofi/colors-rofi.rasi
 waybar/colors-waybar.css
 foot/colors-foot.ini
