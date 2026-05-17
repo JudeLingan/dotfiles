@@ -30,8 +30,8 @@ require('plugins.transparent')
 
 -- late load --
 vim.schedule(function()
-	require('plugins.vimwiki')
 	require('plugins.telescope')
+	require('plugins.vimwiki')
 	require('plugins.lsp')
 	require('plugins.completion')
 	require('plugins.git')
