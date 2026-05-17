@@ -1,6 +1,8 @@
 local run = function()
-	package.loaded['colorschemes.colors-nvim'] = nil
-	local colors = require('colorschemes.colors-nvim')
+	if package.loaded['colorschemes.colors-nvim'] then
+		package.loaded['colorschemes.colors-nvim'] = nil
+	end
+	local colors = pcall(require, 'colorschemes.colors-nvim')
 
 	if colors then
 		local package_name = 'colorschemes.' .. colors.theme
