@@ -39,6 +39,7 @@ nvim/lua/plugins/colors-nvim.lua
 alacritty/colors-alacritty.toml
 hypr/colors-hypr.conf
 nvim/nvim-pack-lock.json
+nvim/lua/colorschemes/colors-nvim.lua
 river/colors-river.sh
 river/profile.sh
 rofi/colors-rofi.rasi
