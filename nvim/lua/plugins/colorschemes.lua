@@ -1,5 +1,11 @@
 vim.pack.add({
 	_G.gh('xiyaowong/transparent.nvim'),
+	_G.gh('ellisonleao/gruvbox.nvim'),
+	_G.gh('maxmx03/solarized.nvim'),
+	{
+		src = _G.gh('rose-pine/neovim'),
+		name = 'rose-pine',
+	},
 })
 
 -- Optional, you don't have to run setup.
