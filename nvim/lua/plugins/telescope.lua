@@ -30,8 +30,3 @@ vim.keymap.set('n', '<leader>fb', scope.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', scope.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fd', scope.diagnostics, { desc = 'Telescope help tags' })
 vim.keymap.set('n', '<leader>fr', scope.lsp_references, { desc = 'Telescope LSP references' })
-
--- load if no args passed
-if (not vim.v.argv[2]) or (not vim.v.argv[3] and vim.v.argv[2] == '--embed') then
-	vim.cmd('Telescope find_files')
-end
