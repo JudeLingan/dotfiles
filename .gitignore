@@ -34,12 +34,14 @@
 !waybar
 !waybar/**
 
-nvim/lazy-lock.json
 nvim/lua/plugins/colors-nvim.lua
-alacritty/colors-alacritty.toml
-hypr/colors-hypr.conf
+nvim/lazy-lock.json
+nvim/lua/local
+nvim/lua/local/**
 nvim/nvim-pack-lock.json
 nvim/lua/colorschemes/colors-nvim.lua
+hypr/colors-hypr.conf
+alacritty/colors-alacritty.toml
 river/colors-river.sh
 river/profile.sh
 rofi/colors-rofi.rasi
