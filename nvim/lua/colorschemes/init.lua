@@ -2,9 +2,9 @@ local run = function()
 	if package.loaded['colorschemes.colors-nvim'] then
 		package.loaded['colorschemes.colors-nvim'] = nil
 	end
-	local colors = pcall(require, 'colorschemes.colors-nvim')
+	local has_colors, colors = pcall(require, 'colorschemes.colors-nvim')
 
-	if colors then
+	if has_colors then
 		local package_name = 'colorschemes.' .. colors.theme
 		package.loaded[package_name] = nil
 		require(package_name)
