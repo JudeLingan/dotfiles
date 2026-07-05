@@ -13,6 +13,7 @@ end
 
 
 -- DEPENDENCIES --
+require('recolor')
 local gaps = require('gaps')
 
 -- AUTOSTART --
@@ -86,6 +87,7 @@ gaps.set_size({
 })
 
 gaps.set_gaps_on(true)
+Recolor()
 
 
 --require("recolor.conf")

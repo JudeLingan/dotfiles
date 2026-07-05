@@ -3,7 +3,7 @@
 THEME_DIR=$HOME/.config/themes
 THEME=$(ls $THEME_DIR | rofi -dmenu)
 
-#return if rofi is closed
+# return if rofi is closed
 if [ -z $THEME ]; then
 	exit 0
 fi
@@ -12,15 +12,17 @@ if [ ! -d $THEME_DIR/$THEME/colors-wallpaper ]; then
 	mkdir $THEME_DIR/$THEME/colors-wallpaper
 fi
 
-
+# load settings
 source $THEME_DIR/$THEME/settings.sh
 
+# list placement overrides (not in .config)
 declare -A overrides=(
 	[nvim]="$HOME/.config/nvim/lua/plugins"
 	[gtk]="$HOME/.themes"
 	[wallpaper]="$HOME/.config"
 )
 
+# make all symlinks
 for i in $(ls $THEME_DIR/$THEME); do
 	if [ $(echo $i | awk -F'-' '{print $1}') != "colors" ]; then
 		continue
@@ -36,10 +38,10 @@ for i in $(ls $THEME_DIR/$THEME); do
 	ln -sfn "$THEME_DIR/$THEME/$i" "$dir/$i"
 done
 
-#config
+# post script
 killall -SIGUSR2 waybar &
 
-hyprctl keyword source ~/.config/hypr/recolor.conf &
+hyprctl eval 'Recolor()'
 
 killall swaybg
 swaybg -i ~/.config/colors-wallpaper/* -m fill &
