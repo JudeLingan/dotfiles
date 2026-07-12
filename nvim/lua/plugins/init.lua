@@ -27,12 +27,12 @@ register_package_commands('plugins.telescope', { 'Telescope' })
 
 -- eager load --
 require('plugins.transparent')
+require('plugins.lsp')
 
 -- late load --
 vim.schedule(function()
 	require('plugins.telescope')
 	require('plugins.vimwiki')
-	require('plugins.lsp')
 	require('plugins.completion')
 	require('plugins.git')
 end)

@@ -3,6 +3,7 @@ vim.pack.add({
 	_G.gh('mason-org/mason-lspconfig.nvim'),
 	_G.gh('neovim/nvim-lspconfig'),
 	_G.gh('hrsh7th/cmp-nvim-lsp'),
+	_G.gh('mfussenegger/nvim-dap'),
 })
 
 require("mason").setup()
