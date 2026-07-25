@@ -2,7 +2,9 @@ function Recolor()
 	package.loaded['colors-hypr'] = nil
 
 	local status, colors = pcall(require, 'colors-hypr')
-	assert(status)
+	if (status) then
+		return
+	end
 
 	hl.config({
 		general = {
