@@ -11,6 +11,14 @@ local function set_cursor_size(size)
 	hl.env("HYPRCURSOR_SIZE", size)
 end
 
+local function toggle_monocle()
+	local new_layout = "master"
+	if hl.get_config("general.layout") == "master" then
+		new_layout = "monocle"
+	end
+	hl.config({ general = { layout = new_layout }})
+end
+
 
 -- DEPENDENCIES --
 require('recolor')
@@ -116,7 +124,7 @@ hl.bind(main_mod .. " + H",         hl.dsp.layout("mfact -0.05"))
 hl.bind(main_mod .. " + L",         hl.dsp.layout("mfact +0.05"))
 
 -- custom scripts
-hl.bind(main_mod .. " + M", hl.dsp.exec_cmd("~/.config/hypr/toggle-layout.sh monocle"))
+hl.bind(main_mod .. " + M", toggle_monocle)
 hl.bind(main_mod .. " + G", gaps.toggle)
 hl.bind(main_mod .. " + W", hl.dsp.exec_cmd("~/.config/scripts/wallpaper.sh"))
 hl.bind(main_mod .. " + T", hl.dsp.exec_cmd("~/.config/scripts/theme.sh"))
