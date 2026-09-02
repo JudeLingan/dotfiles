@@ -1,6 +1,7 @@
 *
 
 !.gitignore
+!.gitignore/**
 !alacritty
 !alacritty/**
 !git
@@ -33,11 +34,12 @@
 !tmux/**
 !waybar
 !waybar/**
+!theme-templates
+!theme-templates/**
 
 nvim/lua/plugins/colors-nvim.lua
 nvim/lazy-lock.json
 nvim/lua/local
-nvim/lua/local/**
 nvim/nvim-pack-lock.json
 nvim/lua/colorschemes/colors-nvim.lua
 hypr/colors-hypr.lua
