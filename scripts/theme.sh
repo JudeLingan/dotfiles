@@ -17,7 +17,7 @@ source $THEME_DIR/$THEME/settings.sh
 
 # list placement overrides (not in .config)
 declare -A overrides=(
-	[nvim]="$HOME/.config/nvim/lua/plugins"
+	[nvim]="$HOME/.config/nvim/lua/colorschemes"
 	[gtk]="$HOME/.themes"
 	[wallpaper]="$HOME/.config"
 )
