@@ -34,9 +34,6 @@
 			"active": "",
 			"default": "",
 			"empty": ""
-		},
-		"persistent-workspaces":  {
-			"*": 10
 		}
 	},
 	"dwl/tags": {

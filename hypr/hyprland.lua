@@ -125,6 +125,7 @@ hl.bind(main_mod .. " + B", hl.dsp.exec_cmd("killall -SIGUSR1 waybar"))
 -- switch workspace
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
+	hl.workspace_rule({ workspace = i, persistent = true })
     hl.bind(main_mod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind(main_mod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i, follow = false }))
 end
