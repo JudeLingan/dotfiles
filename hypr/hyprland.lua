@@ -4,12 +4,7 @@
 -- #######################################################################################
 
 local terminal = "alacritty"
-local menu = "rofi -show drun"
-
-local function set_cursor_size(size)
-	hl.env("XCURSOR_SIZE", size)
-	hl.env("HYPRCURSOR_SIZE", size)
-end
+local menu = 'rofi -show drun -run-command "uwsm app -- {cmd}"'
 
 local function toggle_monocle()
 	local new_layout = "master"
@@ -25,12 +20,9 @@ require('recolor')
 local gaps = require('gaps')
 
 -- AUTOSTART --
-set_cursor_size(24)
-
 hl.on("hyprland.start", function ()
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("swaybg -i ~/.config/colors-wallpaper/* -m fil")
-	hl.exec_cmd("~/.config/hypr/toggle-gaps.sh")
+	hl.exec_cmd("uwsm app -s s -- waybar")
+	hl.exec_cmd("uwsm app -s b -- swaybg -i ~/.config/colors-wallpaper/* -m fill")
 end)
 
 
