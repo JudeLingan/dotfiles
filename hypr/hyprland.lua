@@ -187,10 +187,11 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	-- Force certain programs to be fullscreen
-	name = "force-fullscreen",
+	-- Make moonlight fullscreen and autofocus
+	name = "moonlight",
 	match = {
 		title = "^.*- Moonlight$"
 	},
-	fullscreen = true
+	fullscreen = true,
+	focus_on_activate = true,
 })
