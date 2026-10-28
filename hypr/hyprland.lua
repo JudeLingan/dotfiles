@@ -3,7 +3,7 @@
 -- EDIT THIS CONFIG ACCORDING TO THE WIKI INSTRUCTIONS.
 -- #######################################################################################
 
-local terminal = "alacritty"
+local terminal = "uwsm app -- alacritty"
 local menu = 'rofi -show drun -run-command "uwsm app -- {cmd}"'
 
 local function toggle_monocle()
